@@ -1,0 +1,19 @@
+//
+// Prefix header for all source files of the 'JB_Database' target in the 'JB_Database' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+
+#define JBD_DEFAULT_ROUNDING_BEHAVIOR [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode: NSRoundPlain \
+															scale: 2 \
+															raiseOnExactness: NO \
+															raiseOnOverflow: YES \
+															raiseOnUnderflow: YES \
+															raiseOnDivideByZero: YES]
+/*NSDecimalNumber rounding behavior for rounding decimal dollar amounts*/
+
+#define NS_DECIMAL_NUMBER_FROM_NS_NUMBER( x ) [NSDecimalNumber decimalNumberWithDecimal:[x decimalValue]]
+/*Creates an NSDecimalNumber object from a NSNumber object*/

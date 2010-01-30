@@ -1,0 +1,1518 @@
+TEiko's Assistant
+v7
+r0
+t286356122.154128
+cCheck dependencies
+cProcessInfoPlistFile "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Info.plist" Info.plist
+cStripNIB /Users/jonbrooks/programming/EikoAssistant/English.lproj/MainMenu.nib
+cCopyStringsFile "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cStripNIB /Users/jonbrooks/programming/EikoAssistant/invoice.nib
+cCopyTiffFile "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/background.tiff" background.tiff
+cCpResource "build/Release/Eiko's Assistant.app/Contents/Resources/EikoAssistant.icns" EikoAssistant.icns
+cProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cDataModelCompile "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/JB_Database_DataModel.mom" /Users/jonbrooks/programming/EikoAssistant/JB_Database_DataModel.xcdatamodel
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/main.o" /Users/jonbrooks/programming/EikoAssistant/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Database_AppDelegate.o" /Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Project.o" /Users/jonbrooks/programming/EikoAssistant/JBD_Project.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_HoursLog.o" /Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Debug.o" /Users/jonbrooks/programming/EikoAssistant/JB_Debug.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceWindowController.o" /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_OrderedArrayController.o" /Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceItem.o" /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Invoice.o" /Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant" normal ppc
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/main.o" /Users/jonbrooks/programming/EikoAssistant/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Database_AppDelegate.o" /Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Project.o" /Users/jonbrooks/programming/EikoAssistant/JBD_Project.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_HoursLog.o" /Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Debug.o" /Users/jonbrooks/programming/EikoAssistant/JB_Debug.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceWindowController.o" /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_OrderedArrayController.o" /Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceItem.o" /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Invoice.o" /Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant" normal i386
+cCreateUniversalBinary "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant" normal "ppc i386"
+cTouch "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app"
+
+N/Developer/SDKs/MacOSX10.4u.sdk
+c000000004A1199E200000000000000EE
+t1242667490
+s238
+
+N/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004A49A9E400000000000000EE
+t1246341604
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004A769DAB00000000000000EE
+t1249287595
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/jonbrooks/EikoAssistant/EikoAssistant.icns
+c0000000049C54DFE00000000000097E9
+t1237667326
+s38889
+
+N/Users/jonbrooks/EikoAssistant/English.lproj/InfoPlist.strings
+c00000000498CFB1C00000000000000CA
+t1233976092
+s202
+
+N/Users/jonbrooks/EikoAssistant/English.lproj/MainMenu.nib
+c000000004AA3FED300000000000000AA
+t1252261587
+s170
+
+N/Users/jonbrooks/EikoAssistant/JBD_HoursLog.h
+c0000000049A0900F00000000000000F6
+t1235259407
+s246
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/EikoAssistant/JBD_HoursLog.m
+c0000000049A0900F0000000000000349
+t1235259407
+s841
+i"JBD_HoursLog.h"
+i"JBD_Project.h"
+
+N/Users/jonbrooks/EikoAssistant/JBD_Invoice.h
+c0000000049CEE10D000000000000018F
+t1238294797
+s399
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/EikoAssistant/JBD_Invoice.m
+c000000004AA41528000000000000205B
+t1252267304
+s8283
+i"JBD_Invoice.h"
+i"JBD_Project.h"
+i"JBD_HoursLog.h"
+i"JBD_InvoiceItem.h"
+
+N/Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.h
+c0000000049CB088400000000000000E3
+t1238042756
+s227
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m
+c0000000049CB0BAC0000000000000498
+t1238043564
+s1176
+i"JBD_InvoiceItem.h"
+i"JBD_Invoice.h"
+
+N/Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.h
+c0000000049CED89B0000000000000286
+t1238292635
+s646
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m
+c0000000049DBFE1800000000000006B2
+t1239154200
+s1714
+i"JBD_InvoiceWindowController.h"
+
+N/Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.h
+c0000000049CE771A0000000000000161
+t1238267674
+s353
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m
+c0000000049CE778C000000000000021B
+t1238267788
+s539
+i"JBD_OrderedArrayController.h"
+
+N/Users/jonbrooks/EikoAssistant/JBD_Project.h
+c0000000049A06B6E00000000000000F4
+t1235250030
+s244
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/EikoAssistant/JBD_Project.m
+c000000004AA415A200000000000020E0
+t1252267426
+s8416
+i"JBD_Project.h"
+i"JBD_HoursLog.h"
+
+N/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.h
+c0000000049D5AB5C0000000000000447
+t1238739804
+s1095
+i<Cocoa/Cocoa.h>
+i"JBD_InvoiceWindowController.h"
+
+N/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m
+c0000000049D5AC170000000000002E2D
+t1238739991
+s11821
+i"JB_Database_AppDelegate.h"
+i"JBD_Project.h"
+i"JBD_HoursLog.h"
+i"JB_Debug.h"
+i"JBD_Invoice.h"
+i"JBD_InvoiceItem.h"
+
+N/Users/jonbrooks/EikoAssistant/JB_Database_DataModel.xcdatamodel
+c0000000049D5A73E0000000000000088
+t1238738750
+s136
+
+N/Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch
+c000000004AA4147600000000000002B5
+t1252267126
+s693
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/EikoAssistant/JB_Debug.h
+c0000000049A795F30000000000000218
+t1235719667
+s536
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/EikoAssistant/JB_Debug.m
+c0000000049A06072000000000000019A
+t1235247218
+s410
+i"JB_Debug.h"
+
+N/Users/jonbrooks/EikoAssistant/background.tiff
+c0000000049C3033500000000000656D4
+t1237517109
+s415444
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant
+t1252283653
+s34452
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant.LinkFileList
+c0000000049D5B768000000000000045E
+t1238742888
+s1118
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_HoursLog.o
+t1252283652
+s3540
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Invoice.o
+t1252283652
+s12984
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceItem.o
+t1252283652
+s3876
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceWindowController.o
+t1252283652
+s4944
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_OrderedArrayController.o
+t1252283652
+s2936
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Project.o
+t1252283651
+s10112
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Database_AppDelegate.o
+t1252283651
+s13408
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Debug.o
+t1252283652
+s2668
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/main.o
+t1252283651
+s1832
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant
+t1252283651
+s33588
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant.LinkFileList
+c0000000049D5B7680000000000000455
+t1238742888
+s1109
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_HoursLog.o
+t1252283649
+s3832
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Invoice.o
+t1252283650
+s14656
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceItem.o
+t1252283650
+s4260
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceWindowController.o
+t1252283649
+s5384
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_OrderedArrayController.o
+t1252283649
+s3136
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Project.o
+t1252283649
+s11744
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Database_AppDelegate.o
+t1252283649
+s15700
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Debug.o
+t1252283649
+s2788
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/main.o
+t1252283648
+s1892
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_HoursLog.plist
+t1252283682
+s275
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_Invoice.plist
+t1252283682
+s65212
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_InvoiceItem.plist
+t1252283682
+s275
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_InvoiceWindowController.plist
+t1252283682
+s275
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_OrderedArrayController.plist
+t1252283682
+s275
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_Project.plist
+t1252283682
+s15308
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JB_Database_AppDelegate.plist
+t1252283682
+s5749
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JB_Debug.plist
+t1252283682
+s275
+
+N/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/main.plist
+t1252283681
+s275
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app
+t1252283653
+s102
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Info.plist
+t1252283389
+s915
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant
+t1252283653
+s75412
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/PkgInfo
+t1252283389
+s8
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/EikoAssistant.icns
+t1252283391
+s38889
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1252283390
+s202
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj/MainMenu.nib
+t1252283391
+s713973
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/JB_Database_DataModel.mom
+t1252283647
+s14538
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/background.tiff
+t1252283391
+s415444
+
+N/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/invoice.nib
+t1252283391
+s288987
+
+N/Users/jonbrooks/EikoAssistant/invoice.nib
+c000000004AA415D700000000000000AA
+t1252267479
+s170
+
+N/Users/jonbrooks/EikoAssistant/main.m
+c00000000498CFB1C0000000000000101
+t1233976092
+s257
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/programming/EikoAssistant/EikoAssistant.icns
+c0000000049C54DFE00000000000097E9
+t1237667326
+s38889
+
+N/Users/jonbrooks/programming/EikoAssistant/English.lproj/InfoPlist.strings
+c00000000498CFB1C00000000000000CA
+t1233976092
+s202
+
+N/Users/jonbrooks/programming/EikoAssistant/English.lproj/MainMenu.nib
+c000000004AA3FED300000000000000AA
+t1252261587
+s170
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.h
+c0000000049A0900F00000000000000F6
+t1235259407
+s246
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m
+c0000000049A0900F0000000000000349
+t1235259407
+s841
+i"JBD_HoursLog.h"
+i"JBD_Project.h"
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.h
+c0000000049CEE10D000000000000018F
+t1238294797
+s399
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m
+c000000004AA41528000000000000205B
+t1252267304
+s8283
+i"JBD_Invoice.h"
+i"JBD_Project.h"
+i"JBD_HoursLog.h"
+i"JBD_InvoiceItem.h"
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.h
+c0000000049CB088400000000000000E3
+t1238042756
+s227
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m
+c0000000049CB0BAC0000000000000498
+t1238043564
+s1176
+i"JBD_InvoiceItem.h"
+i"JBD_Invoice.h"
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.h
+c0000000049CED89B0000000000000286
+t1238292635
+s646
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m
+c0000000049DBFE1800000000000006B2
+t1239154200
+s1714
+i"JBD_InvoiceWindowController.h"
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.h
+c0000000049CE771A0000000000000161
+t1238267674
+s353
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m
+c0000000049CE778C000000000000021B
+t1238267788
+s539
+i"JBD_OrderedArrayController.h"
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_Project.h
+c0000000049A06B6E00000000000000F4
+t1235250030
+s244
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/programming/EikoAssistant/JBD_Project.m
+c000000004AA415A200000000000020E0
+t1252267426
+s8416
+i"JBD_Project.h"
+i"JBD_HoursLog.h"
+
+N/Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.h
+c0000000049D5AB5C0000000000000447
+t1238739804
+s1095
+i<Cocoa/Cocoa.h>
+i"JBD_InvoiceWindowController.h"
+
+N/Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m
+c0000000049D5AC170000000000002E2D
+t1238739991
+s11821
+i"JB_Database_AppDelegate.h"
+i"JBD_Project.h"
+i"JBD_HoursLog.h"
+i"JB_Debug.h"
+i"JBD_Invoice.h"
+i"JBD_InvoiceItem.h"
+
+N/Users/jonbrooks/programming/EikoAssistant/JB_Database_DataModel.xcdatamodel
+c000000004B6138E40000000000000088
+t1264662756
+s136
+
+N/Users/jonbrooks/programming/EikoAssistant/JB_Database_Prefix.pch
+c000000004AA4147600000000000002B5
+t1252267126
+s693
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/programming/EikoAssistant/JB_Debug.h
+c0000000049A795F30000000000000218
+t1235719667
+s536
+i<Cocoa/Cocoa.h>
+
+N/Users/jonbrooks/programming/EikoAssistant/JB_Debug.m
+c0000000049A06072000000000000019A
+t1235247218
+s410
+i"JB_Debug.h"
+
+N/Users/jonbrooks/programming/EikoAssistant/background.tiff
+c0000000049C3033500000000000656D4
+t1237517109
+s415444
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant
+t1264662715
+s34452
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant.LinkFileList
+c000000004B6138B400000000000004CA
+t1264662708
+s1226
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_HoursLog.o
+t1264662714
+s3540
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Invoice.o
+t1264662715
+s12984
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceItem.o
+t1264662715
+s3876
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceWindowController.o
+t1264662715
+s4944
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_OrderedArrayController.o
+t1264662715
+s2936
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Project.o
+t1264662714
+s10112
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Database_AppDelegate.o
+t1264662714
+s13408
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Debug.o
+t1264662715
+s2668
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/main.o
+t1264662714
+s1832
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant
+t1264662712
+s33588
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant.LinkFileList
+c000000004B6138B400000000000004C1
+t1264662708
+s1217
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_HoursLog.o
+t1264662710
+s3832
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Invoice.o
+t1264662711
+s14656
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceItem.o
+t1264662711
+s4260
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceWindowController.o
+t1264662711
+s5384
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_OrderedArrayController.o
+t1264662711
+s3136
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Project.o
+t1264662710
+s11744
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Database_AppDelegate.o
+t1264662710
+s15700
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Debug.o
+t1264662711
+s2788
+
+N/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/main.o
+t1264662710
+s1892
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app
+t1264662759
+s102
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Info.plist
+t1252283389
+s915
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant
+t1264662715
+s75412
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/PkgInfo
+t1252283389
+s8
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/EikoAssistant.icns
+t1252283391
+s38889
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1252283390
+s202
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj/MainMenu.nib
+t1252283391
+s713973
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/JB_Database_DataModel.mom
+t1264662759
+s14545
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/background.tiff
+t1252283391
+s415444
+
+N/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/invoice.nib
+t1252283391
+s288987
+
+N/Users/jonbrooks/programming/EikoAssistant/invoice.nib
+c000000004AA415D700000000000000AA
+t1252267479
+s170
+
+N/Users/jonbrooks/programming/EikoAssistant/main.m
+c00000000498CFB1C0000000000000101
+t1233976092
+s257
+i<Cocoa/Cocoa.h>
+
+N/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch.gch
+t1264655845
+s38351248
+
+N/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cedakxeboswnotevdejhnoccjgga/JB_Database_Prefix.pch.gch
+t1252283407
+s38499888
+
+N/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch.gch
+t1252283647
+s38351248
+
+N/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-dcfjdpeqybtsldfrduungxmogdsk/JB_Database_Prefix.pch.gch
+t1252283408
+s40605456
+
+N/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-evxmiecllzhyicdseiyutfazfqhc/JB_Database_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch.gch
+t1252283647
+s36208848
+
+N/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch.gch
+t1264655845
+s36208848
+
+N/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch.pth
+t1252283681
+s7229528
+
+N/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-hhisnoslrijkjnfjrfoarirnpedk/JB_Database_Prefix.pch.gch
+t2
+s0
+
+NInfo.plist
+c0000000049D5B71A000000000000039D
+t1238742810
+s925
+
+CAnalyze /Users/jonbrooks/EikoAssistant/JBD_HoursLog.m
+s273976482.177975
+e273976482.287979
+r1
+xAnalyze
+x/Users/jonbrooks/EikoAssistant/JBD_HoursLog.m
+lSLF07#2@53"Analyze /Users/jonbrooks/EikoAssistant/JBD_HoursLog.m273976482#273976482#0(0"0(0#0#45"/Users/jonbrooks/EikoAssistant/JBD_HoursLog.m4300882208#1172"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch --analyze /Users/jonbrooks/EikoAssistant/JBD_HoursLog.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_HoursLog.plist"0#
+
+CAnalyze /Users/jonbrooks/EikoAssistant/JBD_Invoice.m
+s273976482.692217
+e273976482.852052
+r1
+xAnalyze
+x/Users/jonbrooks/EikoAssistant/JBD_Invoice.m
+o/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:49:11: warning: Potential leak of an object allocated on line 49
+o                 return [[NSString stringWithString:@"XX_2009001"] retain];
+o                         ^
+o/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:63:28: warning: Potential leak of an object allocated on line 63 and stored into 'returnString'
+o         NSString *returnString = [[invoiceComponents componentsJoinedByString:@"_"] retain];
+o                                   ^
+o/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:45:11: warning: Potential leak of an object allocated on line 45
+o                 return [[NSString stringWithString:@"XX_2009001"] retain];
+o                         ^
+o/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:40:26: warning: Potential leak of an object allocated on line 40 and stored into 'sd'
+o         NSSortDescriptor * sd = [[NSSortDescriptor alloc] initWithKey:@"invoiceNumber" ascending:NO];
+o                                 ^
+o/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:189:22: warning: Potential leak of an object allocated on line 189 and stored into 'theInvoiceItem'
+o                                 theInvoiceItem = [[JBD_InvoiceItem alloc] initWithEntity: invoiceItemEntity
+o                                                  ^
+o/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:208:32: warning: Potential leak of an object allocated on line 208 and stored into 'blankItem'
+o                 JBD_InvoiceItem *blankItem = [[JBD_InvoiceItem alloc] initWithEntity: invoiceItemEntity
+o                                              ^
+o6 diagnostics generated.
+lSLF07#2@52"Analyze /Users/jonbrooks/EikoAssistant/JBD_Invoice.m273976482#273976482#0(1591"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:49:11: warning: Potential leak of an object allocated on line 49                 return [[NSString stringWithString:@"XX_2009001"] retain];                         ^/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:63:28: warning: Potential leak of an object allocated on line 63 and stored into 'returnString'         NSString *returnString = [[invoiceComponents componentsJoinedByString:@"_"] retain];                                   ^/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:45:11: warning: Potential leak of an object allocated on line 45                 return [[NSString stringWithString:@"XX_2009001"] retain];                         ^/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:40:26: warning: Potential leak of an object allocated on line 40 and stored into 'sd'         NSSortDescriptor * sd = [[NSSortDescriptor alloc] initWithKey:@"invoiceNumber" ascending:NO];                                 ^/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:189:22: warning: Potential leak of an object allocated on line 189 and stored into 'theInvoiceItem'                                 theInvoiceItem = [[JBD_InvoiceItem alloc] initWithEntity: invoiceItemEntity                                                  ^/Users/jonbrooks/EikoAssistant/JBD_Invoice.m:208:32: warning: Potential leak of an object allocated on line 208 and stored into 'blankItem'                 JBD_InvoiceItem *blankItem = [[JBD_InvoiceItem alloc] initWithEntity: invoiceItemEntity                                              ^6 diagnostics generated.6(0@48"Potential leak of an object allocated on line 49273976482#18446744073709551615#0#11(17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#40#2#40#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#44#2#44#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#44#2#44#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#47#2#47#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#47#2#47#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#48#2#48#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#48#2#48#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#3#49#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#3#49#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#11#49#51#21@82"Method returns an Objective-C object with a +0 retain count (non-owning reference)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#11#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#11#49#51#82"Method returns an Objective-C object with a +0 retain count (non-owning reference)17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#11#49#51#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#10#49#59#21@65"Reference count incremented. The object now has a +1 retain count273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#10#0#0#0"2(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#10#49#59#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#11#49#51#65"Reference count incremented. The object now has a +1 retain count17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#10#49#59#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#3#49#8#21@92"Object returned to caller as an owning reference (single retain count transferred to caller)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#3#0#0#0"2(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#3#49#59#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#10#49#59#92"Object returned to caller as an owning reference (single retain count transferred to caller)21@273"Object allocated on line 49 is returned from a method whose name ('generateInvoiceNumberForClient:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#3#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#3#49#8#273"Object allocated on line 49 is returned from a method whose name ('generateInvoiceNumberForClient:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#49#3#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0@79"Potential leak of an object allocated on line 63 and stored into 'returnString'273976482#18446744073709551615#0#12(17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#40#2#40#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#44#2#44#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#44#2#44#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#47#2#47#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#47#2#47#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#48#2#48#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#48#2#48#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#52#2#52#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#52#2#52#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#2#63#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#2#63#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#28#63#76#21@82"Method returns an Objective-C object with a +0 retain count (non-owning reference)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#28#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#28#63#76#82"Method returns an Objective-C object with a +0 retain count (non-owning reference)17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#28#63#76#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#27#63#84#21@65"Reference count incremented. The object now has a +1 retain count273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#27#0#0#0"2(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#27#63#84#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#28#63#76#65"Reference count incremented. The object now has a +1 retain count17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#63#27#63#84#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#67#2#67#7#21@92"Object returned to caller as an owning reference (single retain count transferred to caller)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#67#2#0#0#0"2(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#67#2#67#20#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#67#9#67#20#92"Object returned to caller as an owning reference (single retain count transferred to caller)21@304"Object allocated on line 63 and stored into 'returnString' is returned from a method whose name ('generateInvoiceNumberForClient:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#67#2#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#67#2#67#7#304"Object allocated on line 63 and stored into 'returnString' is returned from a method whose name ('generateInvoiceNumberForClient:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#67#2#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0@48"Potential leak of an object allocated on line 45273976482#18446744073709551615#0#9(17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#40#2#40#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#44#2#44#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#44#2#44#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#3#45#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#3#45#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#11#45#51#21@82"Method returns an Objective-C object with a +0 retain count (non-owning reference)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#11#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#11#45#51#82"Method returns an Objective-C object with a +0 retain count (non-owning reference)17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#11#45#51#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#10#45#59#21@65"Reference count incremented. The object now has a +1 retain count273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#10#0#0#0"2(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#10#45#59#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#11#45#51#65"Reference count incremented. The object now has a +1 retain count17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#10#45#59#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#3#45#8#21@92"Object returned to caller as an owning reference (single retain count transferred to caller)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#3#0#0#0"2(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#3#45#59#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#10#45#59#92"Object returned to caller as an owning reference (single retain count transferred to caller)21@273"Object allocated on line 45 is returned from a method whose name ('generateInvoiceNumberForClient:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#3#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#3#45#8#273"Object allocated on line 45 is returned from a method whose name ('generateInvoiceNumberForClient:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#45#3#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0@69"Potential leak of an object allocated on line 40 and stored into 'sd'273976482#18446744073709551615#0#4(17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#40#2#40#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#40#26#40#93#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#40#26#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#40#26#40#93#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#40#26#40#93#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#41#2#41#8#21@134"Object allocated on line 40 and stored into 'sd' is no longer referenced after this point and has a retain count of +1 (object leaked)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#41#2#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#41#2#41#8#134"Object allocated on line 40 and stored into 'sd' is no longer referenced after this point and has a retain count of +1 (object leaked)6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#41#2#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0@82"Potential leak of an object allocated on line 189 and stored into 'theInvoiceItem'273976482#18446744073709551615#0#14(17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#105#2#105#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#162#2#162#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#162#2#162#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#164#3#164#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#164#3#164#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#3#168#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#3#168#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#170#4#170#4#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#170#4#170#4#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#175#4#175#4#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#175#4#175#4#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#186#5#186#5#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#186#5#186#5#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#189#5#189#5#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#189#5#189#5#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#189#22#190#55#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#189#22#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#189#22#190#55#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#189#22#190#55#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#200#3#200#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#200#3#200#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#3#168#7#21@36"Looping back to the head of the loop273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#3#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#3#168#7#36"Looping back to the head of the loop17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#3#168#7#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#10#168#21#21@147"Object allocated on line 189 and stored into 'theInvoiceItem' is no longer referenced after this point and has a retain count of +1 (object leaked)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#10#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#10#168#21#147"Object allocated on line 189 and stored into 'theInvoiceItem' is no longer referenced after this point and has a retain count of +1 (object leaked)6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#168#10#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0@77"Potential leak of an object allocated on line 208 and stored into 'blankItem'273976482#18446744073709551615#0#11(17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#105#2#105#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#162#2#162#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#162#2#162#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#204#2#204#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#204#2#204#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#2#206#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#2#206#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#208#3#208#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#208#3#208#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#208#32#209#55#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#208#32#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#208#32#209#55#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#208#32#209#55#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#216#2#216#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#216#2#216#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#2#206#4#21@36"Looping back to the head of the loop273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#2#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#2#206#4#36"Looping back to the head of the loop17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#2#206#4#6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#57#206#57#21@142"Object allocated on line 208 and stored into 'blankItem' is no longer referenced after this point and has a retain count of +1 (object leaked)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#57#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#57#206#57#142"Object allocated on line 208 and stored into 'blankItem' is no longer referenced after this point and has a retain count of +1 (object leaked)6@44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m273960104#206#57#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0#0#44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m4300882208#1170"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch --analyze /Users/jonbrooks/EikoAssistant/JBD_Invoice.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_Invoice.plist"0#
+
+CAnalyze /Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m
+s273976482.577509
+e273976482.692122
+r1
+xAnalyze
+x/Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m
+lSLF07#2@56"Analyze /Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m273976482#273976482#0(0"0(0#0#48"/Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m4300882208#1178"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch --analyze /Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_InvoiceItem.plist"0#
+
+CAnalyze /Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m
+s273976482.380456
+e273976482.475236
+r1
+xAnalyze
+x/Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m
+lSLF07#2@68"Analyze /Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m273976482#273976482#0(0"0(0#0#60"/Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m4300882208#1202"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch --analyze /Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_InvoiceWindowController.plist"0#
+
+CAnalyze /Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m
+s273976482.475341
+e273976482.577397
+r1
+xAnalyze
+x/Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m
+lSLF07#2@67"Analyze /Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m273976482#273976482#0(0"0(0#0#59"/Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m4300882208#1200"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch --analyze /Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_OrderedArrayController.plist"0#
+
+CAnalyze /Users/jonbrooks/EikoAssistant/JBD_Project.m
+s273976482.062990
+e273976482.177736
+r1
+xAnalyze
+x/Users/jonbrooks/EikoAssistant/JBD_Project.m
+o/Users/jonbrooks/EikoAssistant/JBD_Project.m:166:31: warning: Potential leak of an object allocated on line 166 and stored into 'newHoursLog'
+o                 JBD_HoursLog *newHoursLog = [[JBD_HoursLog alloc] initWithEntity: hoursLogEntity
+o                                             ^
+o1 diagnostic generated.
+lSLF07#2@52"Analyze /Users/jonbrooks/EikoAssistant/JBD_Project.m273976482#273976482#0(311"/Users/jonbrooks/EikoAssistant/JBD_Project.m:166:31: warning: Potential leak of an object allocated on line 166 and stored into 'newHoursLog'                 JBD_HoursLog *newHoursLog = [[JBD_HoursLog alloc] initWithEntity: hoursLogEntity                                             ^1 diagnostic generated.1(0@79"Potential leak of an object allocated on line 166 and stored into 'newHoursLog'273976482#18446744073709551615#0#15(17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#131#2#131#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#139#2#139#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#139#2#139#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#155#2#155#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#155#2#155#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#2#163#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#2#163#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#166#3#166#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#166#3#166#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#166#31#167#53#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#166#31#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#166#31#167#53#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#166#31#167#53#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#173#3#173#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#173#3#173#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#176#4#176#4#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#176#4#176#4#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#178#3#178#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#178#3#178#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#187#3#187#3#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#187#3#187#3#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#188#2#188#2#17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#188#2#188#2#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#2#163#6#21@36"Looping back to the head of the loop273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#2#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#2#163#6#36"Looping back to the head of the loop17@0"273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#0"0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#0#0#0#0#1(3@6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#2#163#6#6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#9#163#23#21@144"Object allocated on line 166 and stored into 'newHoursLog' is no longer referenced after this point and has a retain count of +1 (object leaked)273976482#18446744073709551615#0#0(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#9#0#0#0"1(6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#9#163#23#144"Object allocated on line 166 and stored into 'newHoursLog' is no longer referenced after this point and has a retain count of +1 (object leaked)6@44"/Users/jonbrooks/EikoAssistant/JBD_Project.m273960226#163#9#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0#0#44"/Users/jonbrooks/EikoAssistant/JBD_Project.m4300882208#1170"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch --analyze /Users/jonbrooks/EikoAssistant/JBD_Project.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JBD_Project.plist"0#
+
+CAnalyze /Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m
+s273976481.868392
+e273976482.062890
+r1
+xAnalyze
+x/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m
+o/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m:247:47: warning: Potential leak of an object allocated on line 247 and stored into 'invoiceWindow'
+o         JBD_InvoiceWindowController *invoiceWindow = [[JBD_InvoiceWindowController alloc] initWithNib:@"invoice" 
+o                                                      ^
+o1 diagnostic generated.
+lSLF07#2@64"Analyze /Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m273976481#273976482#0(351"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m:247:47: warning: Potential leak of an object allocated on line 247 and stored into 'invoiceWindow'         JBD_InvoiceWindowController *invoiceWindow = [[JBD_InvoiceWindowController alloc] initWithNib:@"invoice"                                                       ^1 diagnostic generated.1(0@81"Potential leak of an object allocated on line 247 and stored into 'invoiceWindow'273976482#18446744073709551615#0#5(17@0"273976482#18446744073709551615#0#0(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#0#0#0#0#0"0(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#0#0#0#0#1(3@6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#246#2#246#2#6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#247#2#247#2#17@0"273976482#18446744073709551615#0#0(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#0#0#0#0#0"0(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#0#0#0#0#1(3@6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#247#2#247#2#6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#247#47#249#56#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)273976482#18446744073709551615#0#0(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#247#47#0#0#0"1(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#247#47#249#56#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"273976482#18446744073709551615#0#0(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#0#0#0#0#0"0(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#0#0#0#0#1(3@6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#247#47#249#56#6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#252#1#252#1#21@146"Object allocated on line 247 and stored into 'invoiceWindow' is no longer referenced after this point and has a retain count of +1 (object leaked)273976482#18446744073709551615#0#0(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#252#1#0#0#0"1(6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#252#1#252#1#146"Object allocated on line 247 and stored into 'invoiceWindow' is no longer referenced after this point and has a retain count of +1 (object leaked)6@56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m260432791#252#1#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0#0#56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m4300882208#1194"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch --analyze /Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JB_Database_AppDelegate.plist"0#
+
+CAnalyze /Users/jonbrooks/EikoAssistant/JB_Debug.m
+s273976482.288075
+e273976482.380360
+r1
+xAnalyze
+x/Users/jonbrooks/EikoAssistant/JB_Debug.m
+lSLF07#2@49"Analyze /Users/jonbrooks/EikoAssistant/JB_Debug.m273976482#273976482#0(0"0(0#0#41"/Users/jonbrooks/EikoAssistant/JB_Debug.m4300882208#1164"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch --analyze /Users/jonbrooks/EikoAssistant/JB_Debug.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/JB_Debug.plist"0#
+
+CAnalyze /Users/jonbrooks/EikoAssistant/main.m
+s273976481.697012
+e273976481.868181
+r1
+xAnalyze
+x/Users/jonbrooks/EikoAssistant/main.m
+lSLF07#2@45"Analyze /Users/jonbrooks/EikoAssistant/main.m273976481#273976481#0(0"0(0#0#37"/Users/jonbrooks/EikoAssistant/main.m4300882208#1156"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch --analyze /Users/jonbrooks/EikoAssistant/main.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/StaticAnalyzer/normal/i386/main.plist"0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies286356122#286356122#0(0"0(0#1#0"4300885448#0"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_HoursLog.o" /Users/jonbrooks/EikoAssistant/JBD_HoursLog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976451.948813
+e273976452.075330
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_HoursLog.o
+x/Users/jonbrooks/EikoAssistant/JBD_HoursLog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@53"Compile /Users/jonbrooks/EikoAssistant/JBD_HoursLog.m273976451#273976452#0(0"0(0#0#45"/Users/jonbrooks/EikoAssistant/JBD_HoursLog.m4300882208#1118"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_HoursLog.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_HoursLog.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_HoursLog.o" /Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286355514.794087
+e286355514.932981
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_HoursLog.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m286355514#286355514#0(0"0(0#0#57"/Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m4300885448#1214"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_HoursLog.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Invoice.o" /Users/jonbrooks/EikoAssistant/JBD_Invoice.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976452.640384
+e273976452.879932
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Invoice.o
+x/Users/jonbrooks/EikoAssistant/JBD_Invoice.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/jonbrooks/EikoAssistant/JBD_Invoice.m273976452#273976452#0(0"0(0#0#44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m4300882208#1116"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_Invoice.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Invoice.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Invoice.o" /Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286355515.172209
+e286355515.423755
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Invoice.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m286355515#286355515#0(0"0(0#0#56"/Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m4300885448#1212"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Invoice.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceItem.o" /Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976452.503707
+e273976452.640192
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceItem.o
+x/Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m273976452#273976452#0(0"0(0#0#48"/Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m4300882208#1124"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceItem.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceItem.o" /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286355515.121981
+e286355515.282376
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceItem.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m286355515#286355515#0(0"0(0#0#60"/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m4300885448#1220"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceItem.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceWindowController.o" /Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976452.195748
+e273976452.383280
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceWindowController.o
+x/Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m273976452#273976452#0(0"0(0#0#60"/Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m4300882208#1148"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceWindowController.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceWindowController.o" /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286355514.933094
+e286355515.121859
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceWindowController.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m286355514#286355515#0(0"0(0#0#72"/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m4300885448#1244"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_InvoiceWindowController.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_OrderedArrayController.o" /Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976452.383387
+e273976452.503595
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_OrderedArrayController.o
+x/Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m273976452#273976452#0(0"0(0#0#59"/Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m4300882208#1146"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_OrderedArrayController.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_OrderedArrayController.o" /Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286355515.030456
+e286355515.172091
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_OrderedArrayController.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m286355515#286355515#0(0"0(0#0#71"/Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m4300885448#1242"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_OrderedArrayController.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Project.o" /Users/jonbrooks/EikoAssistant/JBD_Project.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976451.713784
+e273976451.948702
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Project.o
+x/Users/jonbrooks/EikoAssistant/JBD_Project.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/jonbrooks/EikoAssistant/JBD_Project.m273976451#273976451#0(0"0(0#0#44"/Users/jonbrooks/EikoAssistant/JBD_Project.m4300882208#1116"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_Project.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Project.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Project.o" /Users/jonbrooks/programming/EikoAssistant/JBD_Project.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286355514.627579
+e286355514.884929
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Project.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_Project.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_Project.m286355514#286355514#0(0"0(0#0#56"/Users/jonbrooks/programming/EikoAssistant/JBD_Project.m4300885448#1212"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_Project.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JBD_Project.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Database_AppDelegate.o" /Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976451.417007
+e273976451.713680
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Database_AppDelegate.o
+x/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m273976451#273976451#0(0"0(0#0#56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m4300882208#1140"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Database_AppDelegate.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Database_AppDelegate.o" /Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286355512.748439
+e286355514.793825
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Database_AppDelegate.o
+x/Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m286355512#286355514#0(0"0(0#0#68"/Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m4300885448#1236"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Database_AppDelegate.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Debug.o" /Users/jonbrooks/EikoAssistant/JB_Debug.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976452.075429
+e273976452.195633
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Debug.o
+x/Users/jonbrooks/EikoAssistant/JB_Debug.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@49"Compile /Users/jonbrooks/EikoAssistant/JB_Debug.m273976452#273976452#0(0"0(0#0#41"/Users/jonbrooks/EikoAssistant/JB_Debug.m4300882208#1110"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JB_Debug.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Debug.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Debug.o" /Users/jonbrooks/programming/EikoAssistant/JB_Debug.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286355514.885047
+e286355515.030329
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Debug.o
+x/Users/jonbrooks/programming/EikoAssistant/JB_Debug.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/jonbrooks/programming/EikoAssistant/JB_Debug.m286355514#286355515#0(0"0(0#0#53"/Users/jonbrooks/programming/EikoAssistant/JB_Debug.m4300885448#1206"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JB_Debug.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/JB_Debug.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/main.o" /Users/jonbrooks/EikoAssistant/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976451.045809
+e273976451.416898
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/main.o
+x/Users/jonbrooks/EikoAssistant/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/jonbrooks/EikoAssistant/main.m273976451#273976451#0(0"0(0#0#37"/Users/jonbrooks/EikoAssistant/main.m4300882208#1102"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/main.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/main.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/main.o" /Users/jonbrooks/programming/EikoAssistant/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286355512.747545
+e286355514.627384
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/main.o
+x/Users/jonbrooks/programming/EikoAssistant/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/jonbrooks/programming/EikoAssistant/main.m286355512#286355514#0(0"0(0#0#49"/Users/jonbrooks/programming/EikoAssistant/main.m4300885448#1198"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/main.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/main.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_HoursLog.o" /Users/jonbrooks/EikoAssistant/JBD_HoursLog.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976449.325121
+e273976449.465181
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_HoursLog.o
+x/Users/jonbrooks/EikoAssistant/JBD_HoursLog.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@53"Compile /Users/jonbrooks/EikoAssistant/JBD_HoursLog.m273976449#273976449#0(0"0(0#0#45"/Users/jonbrooks/EikoAssistant/JBD_HoursLog.m4300882208#1112"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_HoursLog.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_HoursLog.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_HoursLog.o" /Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s286355510.880948
+e286355510.999824
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_HoursLog.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m286355510#286355510#0(0"0(0#0#57"/Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m4300885448#1208"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_HoursLog.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_HoursLog.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Invoice.o" /Users/jonbrooks/EikoAssistant/JBD_Invoice.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976450.013231
+e273976450.267337
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Invoice.o
+x/Users/jonbrooks/EikoAssistant/JBD_Invoice.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/jonbrooks/EikoAssistant/JBD_Invoice.m273976450#273976450#0(0"0(0#0#44"/Users/jonbrooks/EikoAssistant/JBD_Invoice.m4300882208#1110"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_Invoice.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Invoice.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Invoice.o" /Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s286355511.496677
+e286355511.729921
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Invoice.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m286355511#286355511#0(0"0(0#0#56"/Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m4300885448#1206"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_Invoice.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Invoice.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceItem.o" /Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976449.888259
+e273976450.013122
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceItem.o
+x/Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m273976449#273976450#0(0"0(0#0#48"/Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m4300882208#1118"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_InvoiceItem.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceItem.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceItem.o" /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s286355511.371781
+e286355511.496567
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceItem.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m286355511#286355511#0(0"0(0#0#60"/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m4300885448#1214"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceItem.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceItem.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceWindowController.o" /Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976449.587926
+e273976449.745887
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceWindowController.o
+x/Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m273976449#273976449#0(0"0(0#0#60"/Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m4300882208#1142"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_InvoiceWindowController.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceWindowController.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceWindowController.o" /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s286355511.115137
+e286355511.258158
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceWindowController.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m286355511#286355511#0(0"0(0#0#72"/Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m4300885448#1238"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_InvoiceWindowController.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_InvoiceWindowController.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_OrderedArrayController.o" /Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976449.745994
+e273976449.888155
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_OrderedArrayController.o
+x/Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m273976449#273976449#0(0"0(0#0#59"/Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m4300882208#1140"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_OrderedArrayController.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_OrderedArrayController.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_OrderedArrayController.o" /Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s286355511.258260
+e286355511.371668
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_OrderedArrayController.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m286355511#286355511#0(0"0(0#0#71"/Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m4300885448#1236"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_OrderedArrayController.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_OrderedArrayController.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Project.o" /Users/jonbrooks/EikoAssistant/JBD_Project.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976449.108092
+e273976449.325007
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Project.o
+x/Users/jonbrooks/EikoAssistant/JBD_Project.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/jonbrooks/EikoAssistant/JBD_Project.m273976449#273976449#0(0"0(0#0#44"/Users/jonbrooks/EikoAssistant/JBD_Project.m4300882208#1110"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JBD_Project.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Project.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Project.o" /Users/jonbrooks/programming/EikoAssistant/JBD_Project.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s286355510.665963
+e286355510.880836
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Project.o
+x/Users/jonbrooks/programming/EikoAssistant/JBD_Project.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/jonbrooks/programming/EikoAssistant/JBD_Project.m286355510#286355510#0(0"0(0#0#56"/Users/jonbrooks/programming/EikoAssistant/JBD_Project.m4300885448#1206"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JBD_Project.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JBD_Project.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Database_AppDelegate.o" /Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976448.657515
+e273976449.107943
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Database_AppDelegate.o
+x/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m273976448#273976449#0(0"0(0#0#56"/Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m4300882208#1134"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JB_Database_AppDelegate.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Database_AppDelegate.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Database_AppDelegate.o" /Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s286355510.301895
+e286355510.665852
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Database_AppDelegate.o
+x/Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m286355510#286355510#0(0"0(0#0#68"/Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m4300885448#1230"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JB_Database_AppDelegate.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Database_AppDelegate.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Debug.o" /Users/jonbrooks/EikoAssistant/JB_Debug.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976449.465292
+e273976449.587811
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Debug.o
+x/Users/jonbrooks/EikoAssistant/JB_Debug.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@49"Compile /Users/jonbrooks/EikoAssistant/JB_Debug.m273976449#273976449#0(0"0(0#0#41"/Users/jonbrooks/EikoAssistant/JB_Debug.m4300882208#1104"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/JB_Debug.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Debug.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Debug.o" /Users/jonbrooks/programming/EikoAssistant/JB_Debug.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s286355510.999935
+e286355511.115022
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Debug.o
+x/Users/jonbrooks/programming/EikoAssistant/JB_Debug.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/jonbrooks/programming/EikoAssistant/JB_Debug.m286355511#286355511#0(0"0(0#0#53"/Users/jonbrooks/programming/EikoAssistant/JB_Debug.m4300885448#1200"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/JB_Debug.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/JB_Debug.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/main.o" /Users/jonbrooks/EikoAssistant/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976448.004750
+e273976448.657407
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/main.o
+x/Users/jonbrooks/EikoAssistant/main.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/jonbrooks/EikoAssistant/main.m273976448#273976448#0(0"0(0#0#37"/Users/jonbrooks/EikoAssistant/main.m4300882208#1096"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch -c /Users/jonbrooks/EikoAssistant/main.m -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/main.o"0#
+
+CCompileC "build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/main.o" /Users/jonbrooks/programming/EikoAssistant/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s286355508.101284
+e286355510.301726
+r1
+xCompileC
+xbuild/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/main.o
+x/Users/jonbrooks/programming/EikoAssistant/main.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/jonbrooks/programming/EikoAssistant/main.m286355508#286355510#0(0"0(0#0#49"/Users/jonbrooks/programming/EikoAssistant/main.m7811904093197463552#1192"    cd /Users/jonbrooks/programming/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/programming/EikoAssistant/build/Release -I/Users/jonbrooks/programming/EikoAssistant/build/Release/include "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -include /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch -c /Users/jonbrooks/programming/EikoAssistant/main.m -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/main.o"0#
+
+CCopyStringsFile "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+s273976189.285832
+e273976190.564284
+r1
+xCopyStringsFile
+x/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings273976189#273976190#0(0"0(0#0#62"/Users/jonbrooks/EikoAssistant/English.lproj/InfoPlist.strings4300882208#363"    cd /Users/jonbrooks/EikoAssistant    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj"0#
+
+CCopyStringsFile "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+r0
+
+CCopyTiffFile "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/background.tiff" background.tiff
+s273976191.760537
+e273976191.871082
+r1
+xCopyTiffFile
+x/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/background.tiff
+xbackground.tiff
+lSLF07#2@20"Copy background.tiff273976191#273976191#0(0"0(0#0#46"/Users/jonbrooks/EikoAssistant/background.tiff4300882208#240"    cd /Users/jonbrooks/EikoAssistant    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copytiff background.tiff --outdir "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources"0#
+
+CCopyTiffFile "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/background.tiff" background.tiff
+r0
+
+CCpResource "build/Release/Eiko's Assistant.app/Contents/Resources/EikoAssistant.icns" EikoAssistant.icns
+s273976191.834963
+e273976191.891978
+r1
+xCpResource
+xbuild/Release/Eiko's Assistant.app/Contents/Resources/EikoAssistant.icns
+xEikoAssistant.icns
+lSLF07#2@23"Copy EikoAssistant.icns273976191#273976191#0(0"0(0#0#49"/Users/jonbrooks/EikoAssistant/EikoAssistant.icns4300882208#344"    cd /Users/jonbrooks/EikoAssistant    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/jonbrooks/EikoAssistant/EikoAssistant.icns "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources"0#
+
+CCreateUniversalBinary "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant" normal "ppc i386"
+s273976453.133056
+e273976453.183613
+r1
+xCreateUniversalBinary
+x/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant
+xnormal
+xppc i386
+lSLF07#2@108"CreateUniversalBinary "build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant" normal "ppc i386"273976453#273976453#0(0"0(0#0#39"/Users/jonbrooks/EikoAssistant/ppc i3864300882208#421"    cd /Users/jonbrooks/EikoAssistant    /usr/bin/lipo -create "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant" "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant" -output "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant"0#
+
+CCreateUniversalBinary "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant" normal "ppc i386"
+s286355515.712917
+e286355515.752071
+r1
+xCreateUniversalBinary
+x/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant
+xnormal
+xppc i386
+lSLF07#2@108"CreateUniversalBinary "build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant" normal "ppc i386"286355515#286355515#0(0"0(0#0#51"/Users/jonbrooks/programming/EikoAssistant/ppc i3864300885448#469"    cd /Users/jonbrooks/programming/EikoAssistant    /usr/bin/lipo -create "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant" "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant" -output "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/MacOS/Eiko's Assistant"0#
+
+CDataModelCompile "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/JB_Database_DataModel.mom" /Users/jonbrooks/EikoAssistant/JB_Database_DataModel.xcdatamodel
+s273976447.487944
+e273976448.004625
+r1
+xDataModelCompile
+x/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/JB_Database_DataModel.mom
+x/Users/jonbrooks/EikoAssistant/JB_Database_DataModel.xcdatamodel
+lSLF07#2@72"Compile /Users/jonbrooks/EikoAssistant/JB_Database_DataModel.xcdatamodel273976447#273976448#0(0"0(0#0#64"/Users/jonbrooks/EikoAssistant/JB_Database_DataModel.xcdatamodel4300882208#273"    cd /Users/jonbrooks/EikoAssistant    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.5 /Users/jonbrooks/EikoAssistant/JB_Database_DataModel.xcdatamodel "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/JB_Database_DataModel.mom"0#
+
+CDataModelCompile "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/JB_Database_DataModel.mom" /Users/jonbrooks/programming/EikoAssistant/JB_Database_DataModel.xcdatamodel
+s286355559.306040
+e286355559.547677
+r1
+xDataModelCompile
+x/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/JB_Database_DataModel.mom
+x/Users/jonbrooks/programming/EikoAssistant/JB_Database_DataModel.xcdatamodel
+lSLF07#2@84"Compile /Users/jonbrooks/programming/EikoAssistant/JB_Database_DataModel.xcdatamodel286355559#286355559#0(0"0(0#0#76"/Users/jonbrooks/programming/EikoAssistant/JB_Database_DataModel.xcdatamodel8458375227269805056#309"    cd /Users/jonbrooks/programming/EikoAssistant    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.5 /Users/jonbrooks/programming/EikoAssistant/JB_Database_DataModel.xcdatamodel "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/JB_Database_DataModel.mom"0#
+
+CLd "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant" normal i386
+s273976452.880034
+e273976453.132953
+r1
+xLd
+x/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant
+xnormal
+xi386
+lSLF07#2@127"Link /Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant273976452#273976453#0(0"0(0#0#0"4300882208#575"    cd /Users/jonbrooks/EikoAssistant    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/jonbrooks/EikoAssistant/build/Release -F/Users/jonbrooks/EikoAssistant/build/Release -filelist "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant"0#
+
+CLd "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant" normal ppc
+s273976450.267439
+e273976451.045611
+r1
+xLd
+x/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant
+xnormal
+xppc
+lSLF07#2@126"Link /Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant273976450#273976451#0(0"0(0#0#0"4300882208#572"    cd /Users/jonbrooks/EikoAssistant    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/jonbrooks/EikoAssistant/build/Release -F/Users/jonbrooks/EikoAssistant/build/Release -filelist "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -o "/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant"0#
+
+CLd "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant" normal i386
+s286355515.423847
+e286355515.712813
+r1
+xLd
+x/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant
+xnormal
+xi386
+lSLF07#2@139"Link /Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant286355515#286355515#0(0"0(0#0#0"4300885448#635"    cd /Users/jonbrooks/programming/EikoAssistant    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/jonbrooks/programming/EikoAssistant/build/Release -F/Users/jonbrooks/programming/EikoAssistant/build/Release -filelist "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/i386/Eiko's Assistant"0#
+
+CLd "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant" normal ppc
+s286355511.730030
+e286355512.747389
+r1
+xLd
+x/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant
+xnormal
+xppc
+lSLF07#2@138"Link /Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant286355511#286355512#0(0"0(0#0#0"4300885448#632"    cd /Users/jonbrooks/programming/EikoAssistant    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/jonbrooks/programming/EikoAssistant/build/Release -F/Users/jonbrooks/programming/EikoAssistant/build/Release -filelist "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -o "/Users/jonbrooks/programming/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Objects-normal/ppc/Eiko's Assistant"0#
+
+CProcessInfoPlistFile "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Info.plist" Info.plist
+s273976189.209415
+e273976189.240343
+r1
+xProcessInfoPlistFile
+x/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist273976189#273976189#0(0"0(0#0#41"/Users/jonbrooks/EikoAssistant/Info.plist4300882208#304"    cd /Users/jonbrooks/EikoAssistant    builtin-infoPlistUtility Info.plist -genpkginfo "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Info.plist"0#
+
+CProcessInfoPlistFile "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Info.plist" Info.plist
+r0
+
+CProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-bwrlmuvwufvnpthkbcczuwufxikh/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cedakxeboswnotevdejhnoccjgga/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976191.892171
+e273976207.577601
+r1
+xProcessPCH
+x/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cedakxeboswnotevdejhnoccjgga/JB_Database_Prefix.pch.gch
+xJB_Database_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile JB_Database_Prefix.pch273976191#273976207#0(0"0(0#0#53"/Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch4300882208#1000"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -c /Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch -o /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cedakxeboswnotevdejhnoccjgga/JB_Database_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976429.596988
+e273976447.487830
+r1
+xProcessPCH
+x/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch.gch
+xJB_Database_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile JB_Database_Prefix.pch273976429#273976447#0(0"0(0#0#53"/Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch4300882208#1005"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -c /Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch -o /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-cvfpoyirgomlwhabrwpevmnvcqcs/JB_Database_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-dcfjdpeqybtsldfrduungxmogdsk/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s273976191.894365
+e273976209.102294
+r1
+xProcessPCH
+x/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-dcfjdpeqybtsldfrduungxmogdsk/JB_Database_Prefix.pch.gch
+xJB_Database_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile JB_Database_Prefix.pch273976191#273976209#0(0"0(0#0#53"/Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch4300882208#1005"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -c /Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch -o /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-dcfjdpeqybtsldfrduungxmogdsk/JB_Database_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-evxmiecllzhyicdseiyutfazfqhc/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s273976429.401898
+e273976447.359113
+r1
+xProcessPCH
+x/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch.gch
+xJB_Database_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile JB_Database_Prefix.pch273976429#273976447#0(0"0(0#0#53"/Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch4776682527666824192#1000"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/ppc" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -c /Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch -o /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fnocfmhpymxnjtaladsjgcmgbufo/JB_Database_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-frncdrhonkwmtjevfyxgknvisopt/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch.pth JB_Database_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s273976480.632161
+e273976481.695146
+r1
+xProcessPCH
+x/var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch.pth
+xJB_Database_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@33"Precompile JB_Database_Prefix.pch273976480#273976481#0(0"0(0#0#53"/Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch4300882208#1041"    cd /Users/jonbrooks/EikoAssistant    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fasm-blocks -mmacosx-version-min=10.5 -fvisibility=hidden "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/Eiko's Assistant.hmap" -F/Users/jonbrooks/EikoAssistant/build/Release -I/Users/jonbrooks/EikoAssistant/build/Release/include "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources/i386" "-I/Users/jonbrooks/EikoAssistant/build/JB_Database.build/Release/Eiko's Assistant.build/DerivedSources" -c /Users/jonbrooks/EikoAssistant/JB_Database_Prefix.pch -o /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-fwxntmoctgsfznehsrbuiiiqvwgx/JB_Database_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/pu/puxHLXdkGVG7K7LXxwbkEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/JB_Database_Prefix-hhisnoslrijkjnfjrfoarirnpedk/JB_Database_Prefix.pch.gch JB_Database_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CStripNIB /Users/jonbrooks/EikoAssistant/English.lproj/MainMenu.nib
+s273976189.240434
+e273976191.834868
+r1
+xStripNIB
+x/Users/jonbrooks/EikoAssistant/English.lproj/MainMenu.nib
+lSLF07#2@35"StripNIB English.lproj/MainMenu.nib273976189#273976191#0(0"0(0#0#57"/Users/jonbrooks/EikoAssistant/English.lproj/MainMenu.nib4300882208#284"    cd /Users/jonbrooks/EikoAssistant    /Developer/usr/bin/ibtool --strip "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/English.lproj/MainMenu.nib" --output-format human-readable-text /Users/jonbrooks/EikoAssistant/English.lproj/MainMenu.nib0#
+
+CStripNIB /Users/jonbrooks/EikoAssistant/invoice.nib
+s273976190.564388
+e273976191.760355
+r1
+xStripNIB
+x/Users/jonbrooks/EikoAssistant/invoice.nib
+lSLF07#2@20"StripNIB invoice.nib273976190#273976191#0(0"0(0#0#42"/Users/jonbrooks/EikoAssistant/invoice.nib4300882208#254"    cd /Users/jonbrooks/EikoAssistant    /Developer/usr/bin/ibtool --strip "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app/Contents/Resources/invoice.nib" --output-format human-readable-text /Users/jonbrooks/EikoAssistant/invoice.nib0#
+
+CStripNIB /Users/jonbrooks/programming/EikoAssistant/English.lproj/MainMenu.nib
+r0
+
+CStripNIB /Users/jonbrooks/programming/EikoAssistant/invoice.nib
+r0
+
+CTouch "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app"
+s273976453.183707
+e273976453.229629
+r1
+xTouch
+x/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app
+lSLF07#2@71"Touch /Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app273976453#273976453#0(0"0(0#0#0"4300882208#128"    cd /Users/jonbrooks/EikoAssistant    /usr/bin/touch -c "/Users/jonbrooks/EikoAssistant/build/Release/Eiko's Assistant.app"0#
+
+CTouch "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app"
+s286355559.547783
+e286355559.550482
+r1
+xTouch
+x/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app
+lSLF07#2@83"Touch /Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app286355559#286355559#0(0"0(0#0#0"4300885448#152"    cd /Users/jonbrooks/programming/EikoAssistant    /usr/bin/touch -c "/Users/jonbrooks/programming/EikoAssistant/build/Release/Eiko's Assistant.app"0#
+

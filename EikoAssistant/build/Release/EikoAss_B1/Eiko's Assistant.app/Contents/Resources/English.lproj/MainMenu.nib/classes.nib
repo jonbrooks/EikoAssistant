@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = "JBD_OrderedArrayController"; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSArrayController; 
+        }, 
+        {
+            ACTIONS = {copyAction = id; createInvoice = id; saveAction = id; }; 
+            CLASS = "JB_Database_AppDelegate"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                accountsOfCurrentClient = NSArrayController; 
+                allClientsController = NSArrayController; 
+                allInvoices = NSArrayController; 
+                allProjectsController = NSArrayController; 
+                projectView = NSTableView; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
