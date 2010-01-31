@@ -207,6 +207,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Jon Brooks";
+			};
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "JB_Database" */;
 			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
