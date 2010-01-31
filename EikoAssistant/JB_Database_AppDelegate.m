@@ -118,6 +118,49 @@
     return [[self managedObjectContext] undoManager];
 }
 
+
+/*We roll our own error dialog to improve the description of what went wrong*/
+-(void) presentErrorDialog:(NSError*)iError
+{
+	NSManagedObject *tObject = [[iError userInfo] objectForKey: NSValidationObjectErrorKey];
+	NSString *tString = nil;
+	
+	/*The following keys are what are used to identify the object in the error*/
+	if( [tObject respondsToSelector:@selector(name) ] )
+		tString = [tObject valueForKey:@"name"];
+	else if( [tObject respondsToSelector:@selector(projectTitle) ] )
+		tString = [tObject valueForKey:@"projectTitle"]; 
+	else if( [tObject respondsToSelector:@selector(invoiceNumber) ] )
+		tString = [tObject valueForKey:@"invoiceNumber"];
+	else if( [tObject respondsToSelector:@selector(itemDescription) ] )
+		tString = [tObject valueForKey:@"itemDescription"];	
+	else
+	{ 
+		assert( false ); //Need to add a selector to get a description for this type of object
+	}
+
+	/*build and display the new error message*/
+	NSMutableString *tErrorMessage = [NSMutableString stringWithString: @"Problem with "];
+	[tErrorMessage appendString: [[tObject entity] name]];
+	[tErrorMessage appendString: @": "];
+	[tErrorMessage appendString:tString];
+	[tErrorMessage appendString:@"\n"];
+	[tErrorMessage appendString: [iError localizedDescription]];
+	
+	
+	NSAlert *theAlert = [NSAlert alertWithMessageText: nil 
+				defaultButton: @"OK" 
+				alternateButton: nil 
+				otherButton: nil 
+				informativeTextWithFormat: tErrorMessage];
+	
+	[theAlert setMessageText:@"Save Failed!"];					
+	
+	[theAlert runModal];
+}
+
+
+
 /*Attempts a save, displaying all errors if there are any
  returns YES on success, NO on errors
 */ 
@@ -132,17 +175,12 @@
 		{
 			
 			NSArray *errors = [[error userInfo] objectForKey:NSDetailedErrorsKey];
-			
-			
-			NSEnumerator *tEnum = [errors objectEnumerator];
-			
-			NSError *tError;
-			
-			while( tError = [tEnum nextObject] )
-				[[NSApplication sharedApplication] presentError:tError];	
+				
+			for( NSError *tError in errors )
+				[self presentErrorDialog: tError];
 		}	
 		else
-			[[NSApplication sharedApplication] presentError:error];
+			[self presentErrorDialog: error];
 		
 		return NO;		
 		
