@@ -112,6 +112,8 @@
 	[self setValue:[theClient valueForKey:@"addressLine1"] forKey:@"addressLine1"];
 	[self setValue:[theClient valueForKey:@"addressLine2"] forKey:@"addressLine2"];
 	[self setValue:[theClient valueForKey:@"phoneNumber"] forKey:@"phoneNumber"];
+	[self setValue:[[firstProject valueForKey:@"projectManager"] name] forKey:@"projectManager"];
+	[self setValue:[firstProject valueForKey:@"poNumber"] forKey:@"poNumber"];
 	//set the date to now
 	NSDate *dateToAdd = [NSDate date];
 	[self setValue:dateToAdd forKey:@"date"];
