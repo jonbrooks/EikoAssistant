@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		1A6A841F0F49EC57009A2172 /* JBD_Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A841E0F49EC57009A2172 /* JBD_Project.m */; };
 		1A7BF7100F4D0049006ECD0E /* JBD_HoursLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BF70F0F4D0049006ECD0E /* JBD_HoursLog.m */; };
-		1AF9C8BF0F77274C00E41B3A /* invoice.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF9C8BE0F77274C00E41B3A /* invoice.nib */; };
 		1AF9C8C10F77275E00E41B3A /* background.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1AF9C8C00F77275D00E41B3A /* background.tiff */; };
 		770B37ED0679A11B001EADE2 /* JB_Database_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* JB_Database_DataModel.xcdatamodel */; };
 		77C8280E06725ACE000B614F /* JB_Database_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* JB_Database_AppDelegate.m */; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		B03B20550F787D01006E58A7 /* JBD_InvoiceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03B20540F787D01006E58A7 /* JBD_InvoiceWindowController.m */; };
+		B06325D91117F32100E9F3E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06325D71117F32100E9F3E1 /* MainMenu.xib */; };
+		B06325DB1117F32C00E9F3E1 /* invoice.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06325DA1117F32C00E9F3E1 /* invoice.xib */; };
 		B084570A0F7B32C600454D52 /* JBD_OrderedArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08457090F7B32C600454D52 /* JBD_OrderedArrayController.m */; };
 		B08457270F7B3E0C00454D52 /* JBD_InvoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B08457260F7B3E0C00454D52 /* JBD_InvoiceItem.m */; };
 		B084572C0F7B3EF600454D52 /* JBD_Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = B084572B0F7B3EF600454D52 /* JBD_Invoice.m */; };
@@ -33,10 +33,8 @@
 		1A7BF70E0F4D0049006ECD0E /* JBD_HoursLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_HoursLog.h; sourceTree = "<group>"; };
 		1A7BF70F0F4D0049006ECD0E /* JBD_HoursLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBD_HoursLog.m; sourceTree = "<group>"; };
 		1AF9C8590F76C36100E41B3A /* Eiko Assistant-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Eiko Assistant-Info.plist"; sourceTree = "<group>"; };
-		1AF9C8BE0F77274C00E41B3A /* invoice.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = invoice.nib; sourceTree = "<group>"; };
 		1AF9C8C00F77275D00E41B3A /* background.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = background.tiff; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* JB_Database_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JB_Database_Prefix.pch; sourceTree = "<group>"; };
@@ -48,6 +46,8 @@
 		8D1107320486CEB800E47090 /* Eiko's Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eiko's Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03B20530F787D01006E58A7 /* JBD_InvoiceWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_InvoiceWindowController.h; sourceTree = "<group>"; };
 		B03B20540F787D01006E58A7 /* JBD_InvoiceWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBD_InvoiceWindowController.m; sourceTree = "<group>"; };
+		B06325D81117F32100E9F3E1 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B06325DA1117F32C00E9F3E1 /* invoice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = invoice.xib; sourceTree = "<group>"; };
 		B08457080F7B32C600454D52 /* JBD_OrderedArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_OrderedArrayController.h; sourceTree = "<group>"; };
 		B08457090F7B32C600454D52 /* JBD_OrderedArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBD_OrderedArrayController.m; sourceTree = "<group>"; };
 		B08457250F7B3E0C00454D52 /* JBD_InvoiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_InvoiceItem.h; sourceTree = "<group>"; };
@@ -138,13 +138,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B06325DA1117F32C00E9F3E1 /* invoice.xib */,
+				B06325D71117F32100E9F3E1 /* MainMenu.xib */,
 				B0BDDE3E0F85EE11001EBC13 /* EikoAssistant.icns */,
 				1AF9C8C00F77275D00E41B3A /* background.tiff */,
 				1AF9C8590F76C36100E41B3A /* Eiko Assistant-Info.plist */,
-				1AF9C8BE0F77274C00E41B3A /* invoice.nib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -227,11 +227,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				1AF9C8BF0F77274C00E41B3A /* invoice.nib in Resources */,
 				1AF9C8C10F77275E00E41B3A /* background.tiff in Resources */,
 				B0BDDE3F0F85EE11001EBC13 /* EikoAssistant.icns in Resources */,
+				B06325D91117F32100E9F3E1 /* MainMenu.xib in Resources */,
+				B06325DB1117F32C00E9F3E1 /* invoice.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +266,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+		B06325D71117F32100E9F3E1 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
+				B06325D81117F32100E9F3E1 /* English */,
 			);
-			name = MainMenu.nib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
