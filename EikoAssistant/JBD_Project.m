@@ -237,6 +237,31 @@
 
 }
 
+-(void)prepareForDeletion
+{/*
+	pm = [self valueForKey:@"projectManager"];
+	NSLog( @"*****************************before change****************************\n");
+	NSMutableSet *projectsOfPM = [pm valueForKey:@"projects"];
+	
+	for( id proj in projectsOfPM )
+		NSLog( @"%@", proj );
+*/
+	
+	//This fixes a mysterious bug even though its root cause is not understood:
+	//For some reason, the projectManager relationship is not being set to null.  The only theory
+	//I can come up with is that the bindings in Interface Builder are doing things in a slightly 
+	//different order than they used to (in Tiger and Leopard):  You press the button to delete the
+	// project, the projectManager dropdown performs its binding which sets the list of project managers 
+	// to empty, and then binds to the project a null project manager BEFORE core data has had a chance
+	// to clean up the REAL project manger's inverse relationship!  IT's a stretch, but I don't have any
+	// other theories, and have spent DAYS researching and scratching my head! - Why isn't Account equally 
+	// affected
+	//- and has a compile error that's more work than its worth to shut up!
+	//Apple - this is totally annoying!
+	id pm = [self valueForKey:@"projectManager"];
+	[pm removeProjectsObject: self];
+}
+
 
 -(void)awakeFromInsert
 {

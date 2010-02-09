@@ -167,10 +167,25 @@
 
 
  -(BOOL) trySaveDisplayingErrors
- {
+ { 
     NSError *error = nil;
     if (![[self managedObjectContext] save:&error]) 
 	{
+	#ifndef NDEBUG
+		//debugging code from
+		// http://stackoverflow.com/questions/1283960/iphone-core-data-unresolved-error-while-saving/1297157#1297157
+		NSLog(@"Failed to save to data store: %@", [error localizedDescription]);
+		NSArray* detailedErrors = [[error userInfo] objectForKey:NSDetailedErrorsKey];
+		if(detailedErrors != nil && [detailedErrors count] > 0) {
+				for(NSError* detailedError in detailedErrors) {
+						NSLog(@"  DetailedError: %@", [detailedError userInfo]);
+				}
+		}
+		else {
+				NSLog(@"  %@", [error userInfo]);
+		}
+	#endif
+			
 		if( [error code] == NSValidationMultipleErrorsError ) 
 		{
 			
