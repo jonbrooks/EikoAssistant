@@ -10,35 +10,14 @@
 #import "JBD_InvoiceWindowController.h"
 
 @interface JB_Database_AppDelegate : NSObject 
-{
-    IBOutlet NSWindow *window;
-    IBOutlet NSArrayController *allProjectsController;
-	IBOutlet NSArrayController *allClientsController;
-	IBOutlet NSArrayController *allInvoices;
-	IBOutlet NSArrayController *accountsOfCurrentClient;
-	IBOutlet NSTableView *projectView;
-	IBOutlet NSButton *invoiceButton;
-	
-	
-    NSPersistentStoreCoordinator *persistentStoreCoordinator;
-    NSManagedObjectModel *managedObjectModel;
-    NSManagedObjectContext *managedObjectContext;
 
-	//JBD_InvoiceWindowController *mInvoiceWindow;
-	
-}
+@property (nonatomic, strong, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic, strong, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, strong, readonly) NSManagedObjectContext *managedObjectContext;
 
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
-- (NSManagedObjectModel *)managedObjectModel;
-- (NSManagedObjectContext *)managedObjectContext;
-
-
-- (IBAction)saveAction:sender;
-- (IBAction)copyAction:sender;
-- (IBAction)createInvoice:sender;
-- (IBAction)showSelectedInvoice:sender;
-
-
-
+- (IBAction)saveAction:(id)sender;
+- (IBAction)copyAction:(id)sender;
+- (IBAction)createInvoice:(id)sender;
+- (IBAction)showSelectedInvoice:(id)sender;
 
 @end

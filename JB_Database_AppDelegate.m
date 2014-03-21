@@ -10,8 +10,24 @@
 #import "JB_Database_AppDelegate.h"
 #import "JB_Debug.h"
 
+@interface JB_Database_AppDelegate ()
+
+@property (nonatomic, strong) IBOutlet NSWindow *window;
+@property (nonatomic, strong) IBOutlet NSArrayController *allProjectsController;
+@property (nonatomic, strong) IBOutlet NSArrayController *allClientsController;
+@property (nonatomic, strong) IBOutlet NSArrayController *allInvoices;
+@property (nonatomic, strong) IBOutlet NSArrayController *accountsOfCurrentClient;
+@property (nonatomic, strong) IBOutlet NSTableView *projectView;
+@property (nonatomic, strong) IBOutlet NSButton *invoiceButton;
+@property (nonatomic, strong) JBD_InvoiceWindowController *invoiceWindowController;
+
+@end
+
 @implementation JB_Database_AppDelegate
 
+@synthesize managedObjectModel = _managedObjectModel;
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 /**
     Returns the support folder for the application, used to store the Core Data
@@ -36,17 +52,17 @@
  
 - (NSManagedObjectModel *)managedObjectModel {
 
-    if (managedObjectModel != nil) {
-        return managedObjectModel;
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
     }
 	
     NSMutableSet *allBundles = [[NSMutableSet alloc] init];
     [allBundles addObject: [NSBundle mainBundle]];
     [allBundles addObjectsFromArray: [NSBundle allFrameworks]];
     
-    managedObjectModel = [NSManagedObjectModel mergedModelFromBundles: [allBundles allObjects]];
+    _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles: [allBundles allObjects]];
     
-    return managedObjectModel;
+    return _managedObjectModel;
 }
 
 
@@ -59,8 +75,8 @@
 
 - (NSPersistentStoreCoordinator *) persistentStoreCoordinator {
 
-    if (persistentStoreCoordinator != nil) {
-        return persistentStoreCoordinator;
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
     }
 
     NSFileManager *fileManager;
@@ -78,12 +94,12 @@
     }
     
     url = [NSURL fileURLWithPath: [applicationSupportFolder stringByAppendingPathComponent: @"EikosAssistant.xml"]];
-    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
-    if (![persistentStoreCoordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:nil error:&error]){
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:nil error:&error]){
         [[NSApplication sharedApplication] presentError:error];
     }    
 
-    return persistentStoreCoordinator;
+    return _persistentStoreCoordinator;
 }
 
 
@@ -94,17 +110,17 @@
  
 - (NSManagedObjectContext *) managedObjectContext {
 
-    if (managedObjectContext != nil) {
-        return managedObjectContext;
+    if (_managedObjectContext != nil) {
+        return _managedObjectContext;
     }
 
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        managedObjectContext = [[NSManagedObjectContext alloc] init];
-        [managedObjectContext setPersistentStoreCoordinator: coordinator];
+        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [_managedObjectContext setPersistentStoreCoordinator: coordinator];
     }
     
-    return managedObjectContext;
+    return _managedObjectContext;
 }
 
 
@@ -231,15 +247,15 @@
 	NSString *tabString = [NSString stringWithCharacters: &tabChar length: 1];	
 	NSString *lineBreakString = [NSString stringWithCharacters: &lineBreakChar length: 1];	
 
-	NSArray *arrayOfSelectedProjects = [allProjectsController selectedObjects]; 
+	NSArray *arrayOfSelectedProjects = [self.allProjectsController selectedObjects];
 
 	//5 = average length of an entry	
 	NSMutableString *returnString = [[NSMutableString alloc] initWithCapacity: 
-										[projectView numberOfColumns]*[arrayOfSelectedProjects count]*5];
+										[self.projectView numberOfColumns]*[arrayOfSelectedProjects count]*5];
 
 	for( id currentRow in arrayOfSelectedProjects)
 	{
-		for( NSTableColumn *currentColumn in [projectView tableColumns] )
+		for( NSTableColumn *currentColumn in [self.projectView tableColumns] )
 		{
 			NSString *keyForColumn = [[currentColumn infoForBinding:@"value"] 
 										valueForKey:NSObservedKeyPathKey];
@@ -273,7 +289,7 @@
 	//paste to the clipboard
 	NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
 	[pasteBoard declareTypes:@[NSTabularTextPboardType] owner:nil];
-	//unfortunately, if we had a datasource, this whole routine coule be done with the following line...
+	//unfortunately, if we had a datasource, this whole routine could be done with the following line...
 
 	[pasteBoard setString:returnString forType:NSStringPboardType];
 
@@ -287,36 +303,32 @@
 
 }
 
-
-
-
-
--(IBAction)showSelectedInvoice:sender
+-(IBAction)showSelectedInvoice:(id)sender
 {
-	JBD_Invoice *selectedInvoice = [allInvoices selectedObjects][0];
-	JBD_InvoiceWindowController *invoiceWindow = [[JBD_InvoiceWindowController alloc] initWithNib:@"invoice" 
-													andInvoice: selectedInvoice
-													managedObjectContext: managedObjectContext];
-	[invoiceWindow showWindow:self];
-	
+	JBD_Invoice *selectedInvoice = [self.allInvoices selectedObjects][0];
+	self.invoiceWindowController = [[JBD_InvoiceWindowController alloc] initWithNib:@"invoice"
+                                                                         andInvoice:selectedInvoice
+                                                               managedObjectContext:self.managedObjectContext];
+    
+	[self.invoiceWindowController showWindow:self];
 }
 
 
-- (IBAction)createInvoice:sender
+- (IBAction)createInvoice:(id)sender
 {
 	//might need to use the 'selectedObjects' method
-	NSArray *projectsToAdd = [allProjectsController selectedObjects];
+	NSArray *projectsToAdd = [self.allProjectsController selectedObjects];
 
-	//get the entity description from teh context
+	//get the entity description from the context
 	NSEntityDescription *invoiceEntity = [NSEntityDescription
 		entityForName:@"Invoice"
-		inManagedObjectContext:managedObjectContext];
+		inManagedObjectContext:self.managedObjectContext];
 	
 	JBD_Invoice *newInvoice = [[JBD_Invoice alloc] initWithEntity: invoiceEntity
-													insertIntoManagedObjectContext: managedObjectContext];
+                                   insertIntoManagedObjectContext: self.managedObjectContext];
 													
 	[newInvoice initializeWithProjects: [NSMutableSet setWithArray:projectsToAdd]];
-	[allInvoices addObject: newInvoice];
+	[self.allInvoices addObject: newInvoice];
 	
 	/*added object should be automatically selected*/	
 	[self showSelectedInvoice:self];
@@ -329,7 +341,7 @@
 -(BOOL) canCreateInvoice
 /*determines if an invoice is creatable based on current selection*/
 {
-	NSArray *selectedProjects = [allProjectsController selectedObjects];
+	NSArray *selectedProjects = [self.allProjectsController selectedObjects];
 	NSManagedObject *client, *account;
 	NSEnumerator *projectEnumerator = [selectedProjects objectEnumerator];
 	JBD_Project *projectIter = [projectEnumerator nextObject];
@@ -359,7 +371,7 @@
 - (void)tableViewSelectionDidChange:(NSNotification *)aNotification
 /*called when the main project window changes selection*/
 {
-	[invoiceButton setEnabled: [self canCreateInvoice]];
+	[self.invoiceButton setEnabled: [self canCreateInvoice]];
 }
 
 
@@ -375,9 +387,9 @@
 
     int reply = NSTerminateNow;
     
-    if (managedObjectContext != nil) {
-        if ([managedObjectContext commitEditing]) {
-            if ([managedObjectContext hasChanges]) 
+    if (self.managedObjectContext != nil) {
+        if ([self.managedObjectContext commitEditing]) {
+            if ([self.managedObjectContext hasChanges])
 			{
 				
                 if( ![self trySaveDisplayingErrors] )
@@ -396,18 +408,5 @@
     
     return reply;
 }
-
-
-/**
-    Implementation of dealloc, to release the retained variables.
- */
- 
-- (void) dealloc {
-
-    managedObjectContext = nil;
-    persistentStoreCoordinator = nil;
-    managedObjectModel = nil;
-}
-
 
 @end

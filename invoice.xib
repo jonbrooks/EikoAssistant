@@ -480,7 +480,7 @@ Cg
                             <color key="backgroundColor" cyan="0.032846714999999999" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.totalAmount" id="370"/>
+                            <binding destination="-2" name="value" keyPath="invoice.totalAmount" id="nWP-2l-KnO"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="272">
@@ -493,7 +493,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.date" id="325"/>
+                            <binding destination="-2" name="value" keyPath="invoice.date" id="pQ0-94-CWh"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="285">
@@ -505,7 +505,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.invoiceNumber" id="327"/>
+                            <binding destination="-2" name="value" keyPath="invoice.invoiceNumber" id="K67-5X-BT2"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="291">
@@ -517,7 +517,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.customerName" id="323"/>
+                            <binding destination="-2" name="value" keyPath="invoice.customerName" id="8iq-sg-9ZD"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="292">
@@ -529,7 +529,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.addressLine1" id="329"/>
+                            <binding destination="-2" name="value" keyPath="invoice.addressLine1" id="qfu-9X-wjB"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="293">
@@ -541,7 +541,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.addressLine2" id="331"/>
+                            <binding destination="-2" name="value" keyPath="invoice.addressLine2" id="Gls-QB-Ac0"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="300">
@@ -553,7 +553,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.projectManager" id="333"/>
+                            <binding destination="-2" name="value" keyPath="invoice.projectManager" id="EAf-nI-vtV"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="301">
@@ -565,7 +565,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.projectCode" id="509"/>
+                            <binding destination="-2" name="value" keyPath="invoice.projectCode" id="DEC-fg-B4b"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="302">
@@ -577,7 +577,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.poNumber" id="336"/>
+                            <binding destination="-2" name="value" keyPath="invoice.poNumber" id="OmN-ht-01x"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="303">
@@ -590,7 +590,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.issueDate" id="338"/>
+                            <binding destination="-2" name="value" keyPath="invoice.issueDate" id="0ZT-Zh-jR1"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="304">
@@ -607,7 +607,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.paymentTerm" id="367"/>
+                            <binding destination="-2" name="value" keyPath="invoice.paymentTerm" id="Bhh-0D-Y6w"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="305">
@@ -620,7 +620,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.paymentDue" id="346"/>
+                            <binding destination="-2" name="value" keyPath="invoice.paymentDue" id="EIg-dW-KTK"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="306">
@@ -632,7 +632,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.paymentMethod" id="447"/>
+                            <binding destination="-2" name="value" keyPath="invoice.paymentMethod" id="LoK-qv-Zgf"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="350">
@@ -644,7 +644,7 @@ Cg
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.endCustomerName" id="449"/>
+                            <binding destination="-2" name="value" keyPath="invoice.endCustomerName" id="u3L-dN-54A"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="351">
@@ -656,7 +656,7 @@ Cg
                             <color key="backgroundColor" red="0.0" green="0.10788403000000001" blue="0.46195649999999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.projectName" id="355"/>
+                            <binding destination="-2" name="value" keyPath="invoice.projectName" id="ZLM-6p-42e"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="352">
@@ -669,7 +669,7 @@ Cg
                             <color key="backgroundColor" red="0.0" green="0.10788403000000001" blue="0.46195649999999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.deliveryDate" id="358"/>
+                            <binding destination="-2" name="value" keyPath="invoice.deliveryDate" id="t9m-X8-pHM"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" id="353">
@@ -681,7 +681,7 @@ Cg
                             <color key="backgroundColor" red="0.0" green="0.10788403000000001" blue="0.46195649999999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.servicesString" id="451"/>
+                            <binding destination="-2" name="value" keyPath="invoice.servicesString" id="6gg-Jv-QUo"/>
                         </connections>
                     </textField>
                     <button verticalHuggingPriority="750" id="398">
@@ -705,7 +705,7 @@ Cg
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="invoiceObject.phoneNumber" id="403"/>
+                            <binding destination="-2" name="value" keyPath="invoice.phoneNumber" id="1QM-q0-BTU"/>
                         </connections>
                     </textField>
                     <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="406">
@@ -853,86 +853,10 @@ Cg
                 <string>itemDescription</string>
             </declaredKeys>
             <connections>
-                <binding destination="-2" name="contentSet" keyPath="invoiceObject.invoiceItems" id="363"/>
+                <binding destination="-2" name="contentSet" keyPath="invoice.invoiceItems" id="E7c-CH-SoB"/>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="270"/>
             </connections>
         </arrayController>
-        <view id="407">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="409">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="411">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="413">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="415">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="417">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="419">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="421">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="423">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="425">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="427">
-            <rect key="frame" x="0.0" y="0.0" width="125" height="1"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="429">
-            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="433">
-            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="435">
-            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="437">
-            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="439">
-            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="441">
-            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="443">
-            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
-        <view id="445">
-            <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </view>
     </objects>
     <resources>
         <image name="background.tiff" width="128" height="128"/>

@@ -9,20 +9,12 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface JBD_InvoiceWindowController : NSWindowController {
-	
-	
-	NSManagedObject *mInvoice;
-	NSManagedObjectContext *mManagedObjectContext;
-	IBOutlet NSButton *exportButton;
-}
+@interface JBD_InvoiceWindowController : NSWindowController
 
--(id) initWithNib: (NSString*)iNib 
-			andInvoice: (NSManagedObject*)iInvoice 
-			managedObjectContext: (NSManagedObjectContext *)iManagedObjectContext;
-			
-- (NSManagedObjectContext *)managedObjectContext;
-- (NSManagedObject *)invoiceObject;
-- (IBAction) doExport: (id)sender;
+@property (nonatomic, strong, readonly) NSManagedObject *invoice;
+@property (nonatomic, strong, readonly) NSManagedObjectContext *managedObjectContext;
+
+- (id)initWithNib: (NSString*)iNib andInvoice: (NSManagedObject*)iInvoice managedObjectContext: (NSManagedObjectContext *)iManagedObjectContext;
+- (IBAction)doExport: (id)sender;
 
 @end

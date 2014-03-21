@@ -8,42 +8,27 @@
 
 #import "JBD_InvoiceWindowController.h"
 
+@interface JBD_InvoiceWindowController ()
+@property (nonatomic,strong) IBOutlet NSButton *exportButton;
+@end
 
 @implementation JBD_InvoiceWindowController
 
--(id) initWithNib: (NSString*)iNib 
-			andInvoice: (NSManagedObject*)iInvoice 
-			managedObjectContext: (NSManagedObjectContext *)iManagedObjectContext
-{
+-(id)initWithNib: (NSString*)iNib andInvoice: (NSManagedObject*)iInvoice managedObjectContext: (NSManagedObjectContext *)iManagedObjectContext {
 
-	id ret = [super initWithWindowNibName: iNib];
-	if( ret)
-	{
-
-		mInvoice = iInvoice;
-		mManagedObjectContext = iManagedObjectContext;
+	self = [super initWithWindowNibName: iNib];
+	if (self) {
+		_invoice = iInvoice;
+		_managedObjectContext = iManagedObjectContext;
 	}
 		
-	return ret;
+	return self;
 }
 
-
-
-- (NSManagedObject *)invoiceObject
-{
-	return mInvoice;
-}
-
-- (NSManagedObjectContext *)managedObjectContext
-{
-	return mManagedObjectContext;
-}
-
--(IBAction) doExport: (id)sender
-{
-	[exportButton setHidden:YES];
+-(IBAction) doExport: (id)sender {
+	[self.exportButton setHidden:YES];
 	
-	NSString *filename = [[mInvoice valueForKey:@"invoiceNumber"] stringByAppendingString:@".pdf"];
+	NSString *filename = [[self.invoice valueForKey:@"invoiceNumber"] stringByAppendingString:@".pdf"];
     NSSavePanel *panel = [NSSavePanel savePanel];
     panel.nameFieldStringValue = filename;
 
@@ -54,12 +39,9 @@
             NSURL *url = [NSURL URLWithString:panel.nameFieldStringValue relativeToURL:panel.directoryURL];
             [data writeToURL:url atomically:YES];
         }
-        [exportButton setHidden:NO];
+        [self.exportButton setHidden:NO];
     }];
 
 }
-
-
-
 
 @end

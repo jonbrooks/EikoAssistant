@@ -28,7 +28,7 @@ NSString *CopiedRowsType = @"JBD_COPIED_ROWS_TYPE";
 {
 	unsigned int start, end, count;
 	
-	if ((start == 0) && (range.length == 0))
+	if ((range.location == 0) && (range.length == 0))
 	{
 		return 0;	
 	}

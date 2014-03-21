@@ -156,9 +156,8 @@
 		
 	//add hours log records as individual invoice items
 #define NUMBER_OF_INVOICE_ROWS 9	
-	NSEntityDescription *invoiceItemEntity = [NSEntityDescription
-		entityForName:@"InvoiceItem"
-		inManagedObjectContext:context];	
+	NSEntityDescription *invoiceItemEntity = [NSEntityDescription entityForName:@"InvoiceItem"
+                                                         inManagedObjectContext:context];
 
 	
 	/*We look up an hours log first by order # in this dictionary.  Add a new one if we don't find it*/
@@ -168,7 +167,7 @@
 	{
 		for( JBD_HoursLog *hoursLogIter in projectIter.hoursLogs )
 		{
-			id currentIndex = hoursLogIter.order;
+			NSNumber *currentIndex = hoursLogIter.order;
 			
 			JBD_InvoiceItem *theInvoiceItem = addedIndexes[currentIndex];
 			
@@ -179,13 +178,9 @@
 				theInvoiceItem.quantity = [NSNumber numberWithDouble: [theInvoiceItem.quantity doubleValue] + 
 																	[hoursLogIter.numberOfUnits doubleValue]];
 			}
-			else
-			//An hours log has not been entered yet for this index.  Add one.
-			{
+			else if( !([hoursLogIter.numberOfUnits floatValue] <= 0) ) {
+                //An hours log has not been entered yet for this index.  Add one, but
 				//don't add a line with quantity 0 (but we do want fractional hours!!!)
-				if( [hoursLogIter.numberOfUnits floatValue] <= 0 )
-					continue;
-				
 				theInvoiceItem = [[JBD_InvoiceItem alloc] initWithEntity: invoiceItemEntity
 															insertIntoManagedObjectContext: context];
 
