@@ -20,20 +20,14 @@
 	if( ret)
 	{
 
-		mInvoice = [iInvoice retain];
-		mManagedObjectContext = [iManagedObjectContext retain];
+		mInvoice = iInvoice;
+		mManagedObjectContext = iManagedObjectContext;
 	}
 		
 	return ret;
 }
 
 
-- (void) dealloc 
-{
-	[mInvoice release];
-	[mManagedObjectContext release];
-	[super dealloc];
-}
 
 - (NSManagedObject *)invoiceObject
 {
@@ -50,40 +44,21 @@
 	[exportButton setHidden:YES];
 	
 	NSString *filename = [[mInvoice valueForKey:@"invoiceNumber"] stringByAppendingString:@".pdf"];
+    NSSavePanel *panel = [NSSavePanel savePanel];
+    panel.nameFieldStringValue = filename;
 
-	[[NSSavePanel savePanel] beginSheetForDirectory: nil
-							file: filename 
-							modalForWindow:[self window] 
-							modalDelegate: self
-							didEndSelector:@selector(didEnd:returnCode:saveFormat:)
-							contextInfo: nil];
-
-
-
-}
-
-
-
-- (void)didEnd:(NSSavePanel *)sheet
-    returnCode:(int)code
-    saveFormat:(void *)saveType;
-{
-    if (code == NSOKButton)
-    {
-        if (NO)//for eventually supporting multipage exporting
-        {
-
-        }
-        else
-        {
+    [panel beginSheetModalForWindow:[self window] completionHandler:^(NSInteger result){
+        if (result==NSOKButton) {
             NSRect r = [[[self window] contentView] frame];
             NSData *data = [[self window] dataWithPDFInsideRect:r];
-            
-            [data writeToFile:[sheet filename] atomically:YES];
+            NSURL *url = [NSURL URLWithString:panel.nameFieldStringValue relativeToURL:panel.directoryURL];
+            [data writeToURL:url atomically:YES];
         }
-    }
-	[exportButton setHidden:NO];
+        [exportButton setHidden:NO];
+    }];
+
 }
+
 
 
 

@@ -6,12 +6,9 @@
 //  Copyright __MyCompanyName__ 2009 . All rights reserved.
 //
 
+#import "JBD_ManagedObjectDeclarations.h"
 #import "JB_Database_AppDelegate.h"
-#import "JBD_Project.h"
-#import "JBD_HoursLog.h"
 #import "JB_Debug.h"
-#import "JBD_Invoice.h"
-#import "JBD_InvoiceItem.h"
 
 @implementation JB_Database_AppDelegate
 
@@ -26,7 +23,7 @@
 - (NSString *)applicationSupportFolder {
 
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : NSTemporaryDirectory();
+    NSString *basePath = ([paths count] > 0) ? paths[0] : NSTemporaryDirectory();
     return [basePath stringByAppendingPathComponent:@"EikosAssistant"];
 }
 
@@ -47,8 +44,7 @@
     [allBundles addObject: [NSBundle mainBundle]];
     [allBundles addObjectsFromArray: [NSBundle allFrameworks]];
     
-    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles: [allBundles allObjects]] retain];
-    [allBundles release];
+    managedObjectModel = [NSManagedObjectModel mergedModelFromBundles: [allBundles allObjects]];
     
     return managedObjectModel;
 }
@@ -75,7 +71,10 @@
     fileManager = [NSFileManager defaultManager];
     applicationSupportFolder = [self applicationSupportFolder];
     if ( ![fileManager fileExistsAtPath:applicationSupportFolder isDirectory:NULL] ) {
-        [fileManager createDirectoryAtPath:applicationSupportFolder attributes:nil];
+        [fileManager createDirectoryAtPath:applicationSupportFolder
+               withIntermediateDirectories:NO
+                                attributes:nil
+                                     error:&error];
     }
     
     url = [NSURL fileURLWithPath: [applicationSupportFolder stringByAppendingPathComponent: @"EikosAssistant.xml"]];
@@ -122,37 +121,31 @@
 /*We roll our own error dialog to improve the description of what went wrong*/
 -(void) presentErrorDialog:(NSError*)iError
 {
-	NSManagedObject *tObject = [[iError userInfo] objectForKey: NSValidationObjectErrorKey];
+	NSManagedObject *tObject = [iError userInfo][NSValidationObjectErrorKey];
 	NSString *tString = nil;
 	
 	/*The following keys are what are used to identify the object in the error*/
 	if( [tObject respondsToSelector:@selector(name) ] )
-		tString = [tObject valueForKey:@"name"];
+		tString = [tObject name];
 	else if( [tObject respondsToSelector:@selector(projectTitle) ] )
-		tString = [tObject valueForKey:@"projectTitle"]; 
+		tString = [(JBD_Project*)tObject projectTitle]; 
 	else if( [tObject respondsToSelector:@selector(invoiceNumber) ] )
-		tString = [tObject valueForKey:@"invoiceNumber"];
+		tString = [(JBD_Project*)tObject invoiceNumber];
 	else if( [tObject respondsToSelector:@selector(itemDescription) ] )
-		tString = [tObject valueForKey:@"itemDescription"];	
+		tString = [(JBD_InvoiceItem*)tObject itemDescription];	
 	else
 	{ 
 		assert( false ); //Need to add a selector to get a description for this type of object
 	}
 
-	/*build and display the new error message*/
-	NSMutableString *tErrorMessage = [NSMutableString stringWithString: @"Problem with "];
-	[tErrorMessage appendString: [[tObject entity] name]];
-	[tErrorMessage appendString: @": "];
-	[tErrorMessage appendString:tString];
-	[tErrorMessage appendString:@"\n"];
-	[tErrorMessage appendString: [iError localizedDescription]];
-	
-	
 	NSAlert *theAlert = [NSAlert alertWithMessageText: nil 
 				defaultButton: @"OK" 
 				alternateButton: nil 
 				otherButton: nil 
-				informativeTextWithFormat: tErrorMessage];
+				informativeTextWithFormat: @"Problem with %@: %@\n%@",
+                        [[tObject entity] name],
+                        tString,
+                        [iError localizedDescription]];
 	
 	[theAlert setMessageText:@"Save Failed!"];					
 	
@@ -175,7 +168,7 @@
 		//debugging code from
 		// http://stackoverflow.com/questions/1283960/iphone-core-data-unresolved-error-while-saving/1297157#1297157
 		NSLog(@"Failed to save to data store: %@", [error localizedDescription]);
-		NSArray* detailedErrors = [[error userInfo] objectForKey:NSDetailedErrorsKey];
+		NSArray* detailedErrors = [error userInfo][NSDetailedErrorsKey];
 		if(detailedErrors != nil && [detailedErrors count] > 0) {
 				for(NSError* detailedError in detailedErrors) {
 						NSLog(@"  DetailedError: %@", [detailedError userInfo]);
@@ -189,7 +182,7 @@
 		if( [error code] == NSValidationMultipleErrorsError ) 
 		{
 			
-			NSArray *errors = [[error userInfo] objectForKey:NSDetailedErrorsKey];
+			NSArray *errors = [error userInfo][NSDetailedErrorsKey];
 				
 			for( NSError *tError in errors )
 				[self presentErrorDialog: tError];
@@ -232,8 +225,9 @@
 	we were copying 1000's of rows(as opposed to ~30), we might want to adopt this alternate strategy.
 */
 {
+#if 1
 	const unichar tabChar = NSTabCharacter;
-	const unichar lineBreakChar = NSLineSeparatorCharacter;
+	const unichar lineBreakChar = NSCarriageReturnCharacter;
 	NSString *tabString = [NSString stringWithCharacters: &tabChar length: 1];	
 	NSString *lineBreakString = [NSString stringWithCharacters: &lineBreakChar length: 1];	
 
@@ -243,13 +237,9 @@
 	NSMutableString *returnString = [[NSMutableString alloc] initWithCapacity: 
 										[projectView numberOfColumns]*[arrayOfSelectedProjects count]*5];
 
-	NSEnumerator *rowEnum = [arrayOfSelectedProjects objectEnumerator];
-	id currentRow; 	
-	while( currentRow = [rowEnum nextObject])
+	for( id currentRow in arrayOfSelectedProjects)
 	{
-		NSEnumerator *columnEnum = [[projectView tableColumns] objectEnumerator];
-		NSTableColumn *currentColumn;
-		while( currentColumn = [columnEnum nextObject] )
+		for( NSTableColumn *currentColumn in [projectView tableColumns] )
 		{
 			NSString *keyForColumn = [[currentColumn infoForBinding:@"value"] 
 										valueForKey:NSObservedKeyPathKey];
@@ -282,12 +272,19 @@
 	
 	//paste to the clipboard
 	NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
-	[pasteBoard declareTypes:[NSArray arrayWithObjects:NSTabularTextPboardType, nil] owner:nil];
+	[pasteBoard declareTypes:@[NSTabularTextPboardType] owner:nil];
 	//unfortunately, if we had a datasource, this whole routine coule be done with the following line...
 
 	[pasteBoard setString:returnString forType:NSStringPboardType];
 
-	[returnString release];
+#else
+	NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+	[pasteBoard declareTypes:[NSArray arrayWithObjects:NSTabularTextPboardType, nil] owner:nil];
+
+	[[projectView dataSource] tableView: projectView writeRowsWithIndexes: [projectView selectedRowIndexes] toPasteboard: pasteBoard ];
+
+#endif
+
 }
 
 
@@ -296,7 +293,7 @@
 
 -(IBAction)showSelectedInvoice:sender
 {
-	JBD_Invoice *selectedInvoice = [[allInvoices selectedObjects] objectAtIndex:0];
+	JBD_Invoice *selectedInvoice = [allInvoices selectedObjects][0];
 	JBD_InvoiceWindowController *invoiceWindow = [[JBD_InvoiceWindowController alloc] initWithNib:@"invoice" 
 													andInvoice: selectedInvoice
 													managedObjectContext: managedObjectContext];
@@ -325,7 +322,6 @@
 	[self showSelectedInvoice:self];
 						
 	/* the invoice controller retains newInvoice so we can release it*/												
-	[newInvoice release];
 
 }
 
@@ -338,15 +334,15 @@
 	NSEnumerator *projectEnumerator = [selectedProjects objectEnumerator];
 	JBD_Project *projectIter = [projectEnumerator nextObject];
 
-	client = [projectIter valueForKey:@"client"];
-	account = [projectIter valueForKey:@"account"];
+	client = projectIter.client;
+	account = projectIter.account;
 
 	while(projectIter = [projectEnumerator nextObject])
 	{
 		//make sure the projects all have the same client and account
-		if( [projectIter valueForKey:@"client"] != client )
+		if( projectIter.client != client )
 			return NO;
-		if( [projectIter valueForKey:@"account"] != account )	
+		if( projectIter.account != account )	
 			return NO;
 
 	//make sure the projects all have the same delivery date?? - no
@@ -408,10 +404,9 @@
  
 - (void) dealloc {
 
-    [managedObjectContext release], managedObjectContext = nil;
-    [persistentStoreCoordinator release], persistentStoreCoordinator = nil;
-    [managedObjectModel release], managedObjectModel = nil;
-    [super dealloc];
+    managedObjectContext = nil;
+    persistentStoreCoordinator = nil;
+    managedObjectModel = nil;
 }
 
 

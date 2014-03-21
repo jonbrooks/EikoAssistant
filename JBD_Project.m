@@ -6,23 +6,37 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "JBD_Project.h"
-#import "JBD_HoursLog.h"
-//#import "JB_Debug.h"
+
+#import "JBD_ManagedObjectDeclarations.h"
 
 @implementation JBD_Project
 
+@dynamic account;
+@dynamic client;
+@dynamic hoursLogs;
+@dynamic invoice;
+@dynamic projectManager;
+@dynamic status;
+
+@dynamic datePaid;
+@dynamic dateReceived;
+@dynamic dueDate;
+@dynamic invoiceNumber;
+@dynamic invoiceSent;
+@dynamic notes;
+@dynamic paymentDue;
+@dynamic poNumber;
+@dynamic projectTitle;
+@dynamic totalAmount;
+@dynamic totalHours;
+@dynamic totalWords;
 
 -(void)deleteCurrentHoursLogs
 {
 	NSManagedObjectContext *context = [self managedObjectContext];
 	
-	NSSet *setOfLogs = [self mutableSetValueForKeyPath: @"hoursLogs"];
-	NSEnumerator *logEnumerator = [setOfLogs objectEnumerator];
-	JBD_HoursLog *logIter;
-	
-	while( logIter = [logEnumerator nextObject] )
-		[context deleteObject: logIter];
+	for( JBD_HoursLog *iter in self.hoursLogs )
+		[context deleteObject: iter];
 
 }
 
@@ -36,10 +50,9 @@
 	float hoursAccum = 0.0;
 	NSDecimalNumber *amountAccum = [NSDecimalNumber zero];
 	
-	NSSet *hours = [self mutableSetValueForKeyPath: @"hoursLogs"];
-	NSEnumerator *hoursEnum = [hours objectEnumerator];
-	JBD_HoursLog *hoursIter;
-	while( hoursIter = [hoursEnum nextObject] )
+	NSSet *hours = self.hoursLogs;
+	
+	for( JBD_HoursLog *hoursIter in hours )
 	{
 		//apperently, the deletes in deleteCurrentHoursLogs are cued
 		//so this way we won't add a newly deleted total to our calculations
@@ -49,89 +62,27 @@
 		amountAccum = [amountAccum decimalNumberByAdding: NS_DECIMAL_NUMBER_FROM_NS_NUMBER([hoursIter valueForKey:@"total"])
 											withBehavior: JBD_DEFAULT_ROUNDING_BEHAVIOR];
 		
-		if( [[hoursIter valueForKey:@"unit"] isEqualToString: @"words"] )
-			wordsAccum += [[hoursIter valueForKey:@"numberOfUnits"] intValue];
+		if( [hoursIter.unit isEqualToString: @"words"] )
+			wordsAccum += [hoursIter.numberOfUnits intValue];
 		else	
-			hoursAccum += [[hoursIter valueForKey:@"numberOfUnits"] doubleValue];
+			hoursAccum += [hoursIter.numberOfUnits doubleValue];
 	}
 
-	[self setValue:amountAccum forKey:@"totalAmount"];
-	[self setValue:[NSNumber numberWithInt:wordsAccum] forKey:@"totalWords"];
-	[self setValue:[NSNumber numberWithFloat:hoursAccum] forKey:@"totalHours"];
-
+	self.totalAmount = amountAccum;
+	self.totalWords = @(wordsAccum);
+	self.totalHours = @(hoursAccum);
 }
 
-#if 0
--(void)updateHoursLogs
-/*This currently tries to cache the existing hours before updating the billingRates to the new ones,
-  then puts the numbers back in.  Since the ordering in NSSet is essentially random, who gets what 
-  value is random.  This also leads to losses of values if one account has a different number of billing
-  rates compared to another.  It's hard to define what a good behavior is, and this isn't something that'll
-  be done that often either.  We leave it as is.  Ideal behavior would try to match the old with the new by
-  similarities in the name, but this will be deferred til later.
-*/
-{
-
-	//get the entity description from teh context
-	NSManagedObjectContext *context = [self managedObjectContext];
-
-	//now go through the hours logs, and get their # of units property
-	NSMutableArray *storedValues = [[NSMutableArray alloc] init];
-	NSSet *resultsHours = [self mutableSetValueForKeyPath: @"hoursLogs"];
-	NSEnumerator *resultsEnum = [resultsHours objectEnumerator];
-	JBD_HoursLog *resultsIter;
-	while( resultsIter = [resultsEnum nextObject] )
-		[storedValues addObject: [resultsIter valueForKey:@"numberOfUnits"]];
-	
-	//delete the existing HoursLogs
-	[self deleteCurrentHoursLogs];
-	
-	//now go through the fetched billing rates, and get create an hours log # for each one
-	NSEntityDescription *hoursLogEntity = [NSEntityDescription
-		entityForName:@"HoursLog"
-		inManagedObjectContext:context];
-	NSSet *setOfBillingRates = [self mutableSetValueForKeyPath: @"account.billingRates"];
-	NSEnumerator *billingRateEnumerator = [setOfBillingRates objectEnumerator];
-	NSManagedObject *billingRateIter;
-
-	int i=0;
-	
-	while( billingRateIter = [billingRateEnumerator nextObject] )
-	{
-		//create a new object
-		JBD_HoursLog *newHoursLog = [[JBD_HoursLog alloc] initWithEntity: hoursLogEntity
-													insertIntoManagedObjectContext: context];
-		//set its values according to the billing rate
-		[newHoursLog setValue:self forKey:@"project"];
-		[newHoursLog setValue:[billingRateIter valueForKey:@"name"] forKey:@"name"];
-		[newHoursLog setValue:[billingRateIter valueForKey:@"rate"] forKey:@"rate"];
-		if( [[billingRateIter valueForKey:@"hourlyRate"] boolValue]==YES )
-			[newHoursLog setValue:@"hours" forKey:@"unit"];
-		else
-			[newHoursLog setValue:@"words" forKey:@"unit"];
-			
-		if( [storedValues count] > i )
-			[newHoursLog setValue: [storedValues objectAtIndex:i] forKey:@"numberOfUnits"];
-		
-		[newHoursLog updateTotal];
-		i++;
-				
-	}		
-
-	[storedValues release];
-	
 
 
-}
-#else
 /*updated hours log now caches values using order as an index. No more randomness!*/
 -(void)updateHoursLogs
 {
-	//get the entity description from teh context
+
 	NSManagedObjectContext *context = [self managedObjectContext];
 
 	//now go through the hours logs, and store their # of units property in a dictionary indexed by order
-	NSSet *resultsHours = [self mutableSetValueForKeyPath: @"hoursLogs"];
+	NSSet *resultsHours = self.hoursLogs;
 	int numberOfHoursLogs = [resultsHours count];
 
 	NSMutableDictionary *storedValues = nil;
@@ -139,9 +90,7 @@
 	if( numberOfHoursLogs > 0 )
 	{
 		storedValues = [NSMutableDictionary dictionaryWithCapacity: [resultsHours count]];	
-		NSEnumerator *resultsEnum = [resultsHours objectEnumerator];
-		JBD_HoursLog *resultsIter;
-		while( resultsIter = [resultsEnum nextObject] )
+		for( JBD_HoursLog *resultsIter in resultsHours )
 		{
 				[storedValues setValue: [resultsIter valueForKey:@"numberOfUnits"]
 								forKey: [resultsIter valueForKey:@"order"]];
@@ -151,37 +100,36 @@
 		[self deleteCurrentHoursLogs];
 	
 	}
-	//now go through the fetched billing rates, and get create an hours log # for each one
+	
+	//now go through the fetched billing rates, and get create an hours log # for each one	
 	NSEntityDescription *hoursLogEntity = [NSEntityDescription
 		entityForName:@"HoursLog"
 		inManagedObjectContext:context];	
-	NSSet *setOfBillingRates = [self mutableSetValueForKeyPath: @"account.billingRates"];
-	NSEnumerator *billingRateEnumerator = [setOfBillingRates objectEnumerator];
-	NSManagedObject *billingRateIter;
+	NSSet *setOfBillingRates = self.account.billingRates;
 
-	
-	while( billingRateIter = [billingRateEnumerator nextObject] )
+	for( NSManagedObject *billingRateIter in setOfBillingRates )
 	{
 		//create a new object
 		JBD_HoursLog *newHoursLog = [[JBD_HoursLog alloc] initWithEntity: hoursLogEntity
 													insertIntoManagedObjectContext: context];
 		//set its values according to the billing rate
-		[newHoursLog setValue:self forKey:@"project"];
-		[newHoursLog setValue:[billingRateIter valueForKey:@"name"] forKey:@"name"];
-		[newHoursLog setValue:[billingRateIter valueForKey:@"rate"] forKey:@"rate"];
-		[newHoursLog setValue:[billingRateIter valueForKey:@"order"] forKey:@"order"];	
-		if( [[billingRateIter valueForKey:@"hourlyRate"] boolValue]==YES )
-			[newHoursLog setValue:@"hours" forKey:@"unit"];
+		newHoursLog.project = self;
+		newHoursLog.name = billingRateIter.name;
+		newHoursLog.rate = billingRateIter.rate;
+		newHoursLog.order = billingRateIter.order;
+
+		if( [billingRateIter.hourlyRate boolValue]==YES )
+			newHoursLog.unit = @"hours";
 		else
-			[newHoursLog setValue:@"words" forKey:@"unit"];
+			newHoursLog.unit = @"words";
 	
 		if( storedValues )
 		{
-			id cachedValue = [storedValues objectForKey: [billingRateIter valueForKey:@"order"]];
+			id cachedValue = storedValues[billingRateIter.order];
 			
 			if( cachedValue )
 				//only set it if there was a cached value, otherwise we wipe out the default 0
-				[newHoursLog setValue: cachedValue forKey: @"numberOfUnits"];
+				newHoursLog.numberOfUnits = cachedValue;
 		}			
 			
 		[newHoursLog updateTotal];
@@ -189,50 +137,54 @@
 }
 
 
-#endif
 
 -(void) setAccount:(NSManagedObject*)iAccount
 {
 
 	[self willChangeValueForKey:@"account"];
-	[self setPrimitiveValue:iAccount forKey:@"account"];
+	[self setPrimitiveAccount:iAccount ];
 	[self didChangeValueForKey:@"account"];
 
 	[self updateHoursLogs];
 	[self updateTotals];
+
 }
 
 -(void) setClient:(NSManagedObject*)iClient
 {
+	id oldClient = [self primitiveClient];
+
 	[self willChangeValueForKey:@"client"];
-	[self setPrimitiveValue:iClient forKey:@"client"];
+	[self setPrimitiveClient: iClient];
 	[self didChangeValueForKey:@"client"];
 
-
-	[self setValue: nil forKey: @"account"];
-	[self setValue: nil forKey: @"projectManager"];
+	if( oldClient != iClient )
+	{
+		self.account = nil;
+		self.projectManager = nil;
+	}
 }
 
 -(void) setInvoiceNumber:(NSString*)iInvoiceNumber
 {
 	[self willChangeValueForKey:@"invoiceNumber"];
-	[self setPrimitiveValue:iInvoiceNumber forKey:@"invoiceNumber"];
+	[self setPrimitiveInvoiceNumber: iInvoiceNumber];
 	[self didChangeValueForKey:@"invoiceNumber"];
 
-	[[self valueForKey:@"invoice"] willChangeValueForKey:@"invoiceNumber"];
-	[[self valueForKey:@"invoice"] setPrimitiveValue: iInvoiceNumber forKey:@"invoiceNumber"];
-	[[self valueForKey:@"invoice"] didChangeValueForKey:@"invoiceNumber"];
+	[self.invoice willChangeValueForKey:@"invoiceNumber"];
+	[self.invoice setPrimitiveInvoiceNumber: iInvoiceNumber];
+	[self.invoice didChangeValueForKey:@"invoiceNumber"];
 }
 
 -(void) setPoNumber:(NSString*)iPoNumber
 {
 	[self willChangeValueForKey:@"poNumber"];
-	[self setPrimitiveValue:iPoNumber forKey:@"poNumber"];
+	[self setPrimitivePoNumber: iPoNumber];
 	[self didChangeValueForKey:@"poNumber"];
 	
-	[[self valueForKey:@"invoice"] willChangeValueForKey:@"poNumber"];
-	[[self valueForKey:@"invoice"] setPrimitiveValue: iPoNumber forKey:@"poNumber"];
-	[[self valueForKey:@"invoice"] didChangeValueForKey:@"poNumber"];
+	[self.invoice willChangeValueForKey:@"poNumber"];
+	[self.invoice setPrimitivePoNumber: iPoNumber];
+	[self.invoice didChangeValueForKey:@"poNumber"];
 	
 
 }
@@ -256,20 +208,32 @@
 	// to clean up the REAL project manger's inverse relationship!  IT's a stretch, but I don't have any
 	// other theories, and have spent DAYS researching and scratching my head! - Why isn't Account equally 
 	// affected
-	//- and has a compile error that's more work than its worth to shut up!
-	//Apple - this is totally annoying!
-	id pm = [self valueForKey:@"projectManager"];
-	[pm removeProjectsObject: self];
+	[self.projectManager removeProjectsObject: self];
+
 }
 
-
--(void)awakeFromInsert
+- (id) init
 {
-	[super awakeFromInsert];
-	
-	[self setValue:[NSDate date] forKey:@"dateReceived"];
-	[self setValue:[NSDate date] forKey:@"dueDate"];
-	
+	self = [super init];
+	if (self != nil) 
+	{
+		self.dateReceived = [NSDate date];
+		self.dueDate = [NSDate date];
+
+	}
+	return self;
 }
+
+
+
+//-(void)awakeFromInsert
+//{
+//	[super awakeFromInsert];
+//	
+//	self.dateReceived = [NSDate date];
+//	self.dueDate = [NSDate date];
+
+	
+//}
 
 @end

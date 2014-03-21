@@ -13,7 +13,11 @@
 
 +(void) displayDialog: (NSString *)string
 {
-	NSAlert *theAlert = [NSAlert alertWithMessageText: nil defaultButton: @"OK" alternateButton: nil otherButton: nil informativeTextWithFormat: string];
+	NSAlert *theAlert = [NSAlert alertWithMessageText:nil
+                                        defaultButton:@"OK"
+                                      alternateButton:nil
+                                          otherButton:nil
+                            informativeTextWithFormat:@"%@", string];
 	[theAlert runModal];
 
 }

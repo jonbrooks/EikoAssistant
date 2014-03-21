@@ -8,9 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class JBD_Invoice;
 
 @interface JBD_InvoiceItem : NSManagedObject {
 
 }
+
+@property (nonatomic, strong) NSString * itemDescription;
+@property (nonatomic, strong) NSNumber * lineTotal;
+@property (nonatomic, strong) NSNumber * order;
+@property (nonatomic, strong) NSNumber * quantity;
+@property (nonatomic, strong) NSNumber * unitPrice;
+
+@property (nonatomic, strong) JBD_Invoice * invoice;
 
 @end

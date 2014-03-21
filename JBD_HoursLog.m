@@ -6,33 +6,40 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
+#import "JBD_ManagedObjectDeclarations.h"
 #import "JBD_HoursLog.h"
 #import "JBD_Project.h"
 
 @implementation JBD_HoursLog
 
+@dynamic name;
+@dynamic numberOfUnits;
+@dynamic order;
+@dynamic rate;
+@dynamic total;
+@dynamic unit;
+
+@dynamic project;
+
 -(void) updateTotal
 {
-	[self setValue: [NSNumber numberWithDouble: 
-					( [[self primitiveValueForKey:@"rate"] doubleValue] *
-					  [[self primitiveValueForKey:@"numberOfUnits"] doubleValue] ) ] 
-			 forKey:@"total"];
+	self.total = [NSNumber numberWithDouble: 
+					( [[self primitiveRate] doubleValue] *
+					  [[self primitiveNumberOfUnits] doubleValue] ) ]; 
 
 }
 
--(void) setNumberOfUnits: (NSNumber*)iNumberOfUnits
+- (void)setNumberOfUnits:(NSNumber *)value 
 {
-	[self willChangeValueForKey:@"numberOfUnits"];
-	[self setPrimitiveValue:iNumberOfUnits forKey:@"numberOfUnits"];
-	[self didChangeValueForKey:@"numberOfUnits"];
+    [self willChangeValueForKey:@"numberOfUnits"];
+    [self setPrimitiveNumberOfUnits:value];
+    [self didChangeValueForKey:@"numberOfUnits"];
 
 	[self updateTotal];
 	
 	
 	//now tell the project to update its totals
-	JBD_Project *theProject = [self primitiveValueForKey:@"project"];
-	[theProject updateTotals];
-
+	[self.project updateTotals];
 
 }
 

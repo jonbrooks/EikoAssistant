@@ -6,46 +6,47 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "JBD_InvoiceItem.h"
-#import "JBD_Invoice.h"
+#import "JBD_ManagedObjectDeclarations.h"
 
 @implementation JBD_InvoiceItem
 
+@dynamic itemDescription;
+@dynamic lineTotal;
+@dynamic order;
+@dynamic quantity;
+@dynamic unitPrice;
+@dynamic invoice;
+
 -(void) updateTotal
 {
-	[self setValue: [NSNumber numberWithDouble: 
-					( [[self primitiveValueForKey:@"quantity"] doubleValue] *
-					  [[self primitiveValueForKey:@"unitPrice"] doubleValue] ) ] 
-			 forKey:@"lineTotal"];
+	self.lineTotal = [NSNumber numberWithDouble: ( [[self primitiveQuantity] doubleValue] *
+													[[self primitiveUnitPrice] doubleValue] ) ];
 
 }
 
 -(void) setQuantity: (NSNumber*)iQuantity
 {
 	[self willChangeValueForKey:@"quantity"];
-	[self setPrimitiveValue:iQuantity forKey:@"quantity"];
+	[self setPrimitiveQuantity: iQuantity];
 	[self didChangeValueForKey:@"quantity"];
 
 	[self updateTotal];
 		
 	//now tell the invoice to update its total
-	JBD_Invoice *theInvoice = [self primitiveValueForKey:@"invoice"];
-	[theInvoice updateTotal];
-
+	[self.invoice updateTotal];
 }
 
 -(void) setUnitPrice: (NSNumber*)iUnitPrice
 {
 	[self willChangeValueForKey:@"unitPrice"];
-	[self setPrimitiveValue:iUnitPrice forKey:@"unitPrice"];
+	[self setPrimitiveUnitPrice: iUnitPrice ];
 	[self didChangeValueForKey:@"unitPrice"];
 
 	[self updateTotal];
 	
 	
 	//now tell the invoice to update its total
-	JBD_Invoice *theInvoice = [self primitiveValueForKey:@"invoice"];
-	[theInvoice updateTotal];
+	[self.invoice updateTotal];
 
 
 }

@@ -13,6 +13,18 @@
 
 }
 
+@property (nonatomic, strong) NSString * name;
+@property (nonatomic, strong) NSNumber * numberOfUnits;
+@property (nonatomic, strong) NSNumber * order;
+@property (nonatomic, strong) NSNumber * rate;
+@property (nonatomic, strong) NSNumber * total;
+@property (nonatomic, strong) NSString * unit;
+@property (nonatomic, strong) JBD_Project * project;
+
+
 -(void) updateTotal;
 
+
+
 @end
+

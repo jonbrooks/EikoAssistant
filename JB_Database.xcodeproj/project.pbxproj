@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		B03B20550F787D01006E58A7 /* JBD_InvoiceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03B20540F787D01006E58A7 /* JBD_InvoiceWindowController.m */; };
 		B06325D91117F32100E9F3E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06325D71117F32100E9F3E1 /* MainMenu.xib */; };
 		B06325DB1117F32C00E9F3E1 /* invoice.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06325DA1117F32C00E9F3E1 /* invoice.xib */; };
+		B074950F11278497004DA8E6 /* JBD_DraggableArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = B074950E11278497004DA8E6 /* JBD_DraggableArrayController.m */; };
 		B084570A0F7B32C600454D52 /* JBD_OrderedArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08457090F7B32C600454D52 /* JBD_OrderedArrayController.m */; };
 		B08457270F7B3E0C00454D52 /* JBD_InvoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B08457260F7B3E0C00454D52 /* JBD_InvoiceItem.m */; };
 		B084572C0F7B3EF600454D52 /* JBD_Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = B084572B0F7B3EF600454D52 /* JBD_Invoice.m */; };
@@ -48,6 +49,8 @@
 		B03B20540F787D01006E58A7 /* JBD_InvoiceWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBD_InvoiceWindowController.m; sourceTree = "<group>"; };
 		B06325D81117F32100E9F3E1 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B06325DA1117F32C00E9F3E1 /* invoice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = invoice.xib; sourceTree = "<group>"; };
+		B074950D11278497004DA8E6 /* JBD_DraggableArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_DraggableArrayController.h; sourceTree = "<group>"; };
+		B074950E11278497004DA8E6 /* JBD_DraggableArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBD_DraggableArrayController.m; sourceTree = "<group>"; };
 		B08457080F7B32C600454D52 /* JBD_OrderedArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_OrderedArrayController.h; sourceTree = "<group>"; };
 		B08457090F7B32C600454D52 /* JBD_OrderedArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBD_OrderedArrayController.m; sourceTree = "<group>"; };
 		B08457250F7B3E0C00454D52 /* JBD_InvoiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_InvoiceItem.h; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		B084572A0F7B3EF600454D52 /* JBD_Invoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_Invoice.h; sourceTree = "<group>"; };
 		B084572B0F7B3EF600454D52 /* JBD_Invoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBD_Invoice.m; sourceTree = "<group>"; };
 		B0BDDE3E0F85EE11001EBC13 /* EikoAssistant.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = EikoAssistant.icns; sourceTree = "<group>"; };
+		B0C037D61123C38C00CBAA2D /* JBD_ManagedObjectDeclarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_ManagedObjectDeclarations.h; sourceTree = "<group>"; };
 		B0FF32610F5096DF00633452 /* JB_Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JB_Debug.h; sourceTree = "<group>"; };
 		B0FF32620F5096DF00633452 /* JB_Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JB_Debug.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +87,8 @@
 				B08457AE0F7B44D700454D52 /* ManagedObjects */,
 				B08457080F7B32C600454D52 /* JBD_OrderedArrayController.h */,
 				B08457090F7B32C600454D52 /* JBD_OrderedArrayController.m */,
+				B074950D11278497004DA8E6 /* JBD_DraggableArrayController.h */,
+				B074950E11278497004DA8E6 /* JBD_DraggableArrayController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 		B08457AE0F7B44D700454D52 /* ManagedObjects */ = {
 			isa = PBXGroup;
 			children = (
+				B0C037D61123C38C00CBAA2D /* JBD_ManagedObjectDeclarations.h */,
 				B084572A0F7B3EF600454D52 /* JBD_Invoice.h */,
 				B084572B0F7B3EF600454D52 /* JBD_Invoice.m */,
 				B08457250F7B3E0C00454D52 /* JBD_InvoiceItem.h */,
@@ -208,11 +215,19 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jon Brooks";
 			};
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "JB_Database" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* JB_Database */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,6 +267,7 @@
 				B084570A0F7B32C600454D52 /* JBD_OrderedArrayController.m in Sources */,
 				B08457270F7B3E0C00454D52 /* JBD_InvoiceItem.m in Sources */,
 				B084572C0F7B3EF600454D52 /* JBD_Invoice.m in Sources */,
+				B074950F11278497004DA8E6 /* JBD_DraggableArrayController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +296,8 @@
 		26FC0A850875C7B200E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -299,10 +317,8 @@
 		26FC0A860875C7B200E6366F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
@@ -320,8 +336,9 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -331,7 +348,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx;
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;

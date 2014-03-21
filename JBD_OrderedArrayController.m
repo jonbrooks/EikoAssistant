@@ -19,9 +19,8 @@
 {
 	NSSortDescriptor * sd = [[NSSortDescriptor alloc] initWithKey:@"order" ascending:YES];
 
-	[self setSortDescriptors:[NSArray arrayWithObject:sd]];
+	[self setSortDescriptors:@[sd]];
 
-	[sd release];
 
 }
 
