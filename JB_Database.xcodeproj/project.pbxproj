@@ -23,7 +23,6 @@
 		B08457270F7B3E0C00454D52 /* JBD_InvoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B08457260F7B3E0C00454D52 /* JBD_InvoiceItem.m */; };
 		B084572C0F7B3EF600454D52 /* JBD_Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = B084572B0F7B3EF600454D52 /* JBD_Invoice.m */; };
 		B0BDDE3F0F85EE11001EBC13 /* EikoAssistant.icns in Resources */ = {isa = PBXBuildFile; fileRef = B0BDDE3E0F85EE11001EBC13 /* EikoAssistant.icns */; };
-		B0FF32630F5096DF00633452 /* JB_Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FF32620F5096DF00633452 /* JB_Debug.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,7 +59,6 @@
 		B0BDDE3E0F85EE11001EBC13 /* EikoAssistant.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = EikoAssistant.icns; sourceTree = "<group>"; };
 		B0C037D61123C38C00CBAA2D /* JBD_ManagedObjectDeclarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_ManagedObjectDeclarations.h; sourceTree = "<group>"; };
 		B0FF32610F5096DF00633452 /* JB_Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JB_Debug.h; sourceTree = "<group>"; };
-		B0FF32620F5096DF00633452 /* JB_Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JB_Debug.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,17 +76,15 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B03B20530F787D01006E58A7 /* JBD_InvoiceWindowController.h */,
-				B03B20540F787D01006E58A7 /* JBD_InvoiceWindowController.m */,
-				B0FF32610F5096DF00633452 /* JB_Debug.h */,
-				B0FF32620F5096DF00633452 /* JB_Debug.m */,
 				77C8280B06725ACE000B614F /* JB_Database_AppDelegate.h */,
 				77C8280C06725ACE000B614F /* JB_Database_AppDelegate.m */,
+				B074950D11278497004DA8E6 /* JBD_DraggableArrayController.h */,
+				B074950E11278497004DA8E6 /* JBD_DraggableArrayController.m */,
+				B03B20530F787D01006E58A7 /* JBD_InvoiceWindowController.h */,
+				B03B20540F787D01006E58A7 /* JBD_InvoiceWindowController.m */,
 				B08457AE0F7B44D700454D52 /* ManagedObjects */,
 				B08457080F7B32C600454D52 /* JBD_OrderedArrayController.h */,
 				B08457090F7B32C600454D52 /* JBD_OrderedArrayController.m */,
-				B074950D11278497004DA8E6 /* JBD_DraggableArrayController.h */,
-				B074950E11278497004DA8E6 /* JBD_DraggableArrayController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -135,6 +131,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B0FF32610F5096DF00633452 /* JB_Debug.h */,
 				32CA4F630368D1EE00C91783 /* JB_Database_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -175,15 +172,15 @@
 		B08457AE0F7B44D700454D52 /* ManagedObjects */ = {
 			isa = PBXGroup;
 			children = (
-				B0C037D61123C38C00CBAA2D /* JBD_ManagedObjectDeclarations.h */,
+				1A7BF70E0F4D0049006ECD0E /* JBD_HoursLog.h */,
+				1A7BF70F0F4D0049006ECD0E /* JBD_HoursLog.m */,
 				B084572A0F7B3EF600454D52 /* JBD_Invoice.h */,
 				B084572B0F7B3EF600454D52 /* JBD_Invoice.m */,
 				B08457250F7B3E0C00454D52 /* JBD_InvoiceItem.h */,
 				B08457260F7B3E0C00454D52 /* JBD_InvoiceItem.m */,
+				B0C037D61123C38C00CBAA2D /* JBD_ManagedObjectDeclarations.h */,
 				1A6A841D0F49EC57009A2172 /* JBD_Project.h */,
 				1A6A841E0F49EC57009A2172 /* JBD_Project.m */,
-				1A7BF70E0F4D0049006ECD0E /* JBD_HoursLog.h */,
-				1A7BF70F0F4D0049006ECD0E /* JBD_HoursLog.m */,
 			);
 			name = ManagedObjects;
 			sourceTree = "<group>";
@@ -262,7 +259,6 @@
 				770B37ED0679A11B001EADE2 /* JB_Database_DataModel.xcdatamodel in Sources */,
 				1A6A841F0F49EC57009A2172 /* JBD_Project.m in Sources */,
 				1A7BF7100F4D0049006ECD0E /* JBD_HoursLog.m in Sources */,
-				B0FF32630F5096DF00633452 /* JB_Debug.m in Sources */,
 				B03B20550F787D01006E58A7 /* JBD_InvoiceWindowController.m in Sources */,
 				B084570A0F7B32C600454D52 /* JBD_OrderedArrayController.m in Sources */,
 				B08457270F7B3E0C00454D52 /* JBD_InvoiceItem.m in Sources */,

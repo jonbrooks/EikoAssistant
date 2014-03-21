@@ -10,18 +10,11 @@
 
 #define LOG( string ) NSLog( string )
 
-#define ASSERT_LOG( expression, string ) if( expression ) NSLog( string ); 
+#define ASSERT_LOG( expression, string ) if( !expression ) NSLog( string );
 
 #ifdef NDEBUG
 #define ASSERT_DIALOG( expression, string ) (0)
 #else
-#define ASSERT_DIALOG( expression, string ) if( !expression ) [JB_Debug displayDialog: string]
+#define ASSERT_DIALOG( expression, string ) NSAssert( expression, string )
 #endif
 
-@interface JB_Debug : NSObject {
-
-}
-
-+(void) displayDialog: (NSString *)string;
-
-@end

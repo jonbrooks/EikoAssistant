@@ -12,8 +12,5 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface JBD_OrderedArrayController : NSArrayController {
-
-}
-
+@interface JBD_OrderedArrayController : NSArrayController
 @end

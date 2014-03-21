@@ -31,7 +31,7 @@
                     <scrollView borderType="none" horizontalLineScroll="0.0" horizontalPageScroll="0.0" verticalLineScroll="0.0" verticalPageScroll="0.0" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" id="213">
                         <rect key="frame" x="359" y="678" width="211" height="58"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <clipView key="contentView" id="kJH-ZM-F0g">
+                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="kJH-ZM-F0g">
                             <rect key="frame" x="0.0" y="0.0" width="211" height="58"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -42,15 +42,6 @@
                                     <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000001000000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <size key="minSize" width="211" height="58"/>
                                     <size key="maxSize" width="422" height="10000000"/>
-                                    <attributedString key="textStorage">
-                                        <fragment content="  Invoice">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="48" name="Optima-Italic"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
                                     <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="211" height="58"/>
                                     <size key="maxSize" width="422" height="10000000"/>
@@ -64,62 +55,6 @@
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="497">
                             <rect key="frame" x="-100" y="-100" width="15" height="58"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                    </scrollView>
-                    <scrollView borderType="none" horizontalLineScroll="0.0" horizontalPageScroll="0.0" verticalLineScroll="0.0" verticalPageScroll="0.0" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" id="215">
-                        <rect key="frame" x="42" y="637" width="254" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <clipView key="contentView" id="9as-GB-6xC">
-                            <rect key="frame" x="0.0" y="0.0" width="254" height="49"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" smartInsertDelete="YES" id="216">
-                                    <rect key="frame" x="0.0" y="0.0" width="254" height="49"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="textColor" red="0.29411766" green="0.44705883000000002" blue="0.47450980999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="254" height="49"/>
-                                    <size key="maxSize" width="508" height="10000000"/>
-                                    <attributedString key="textStorage">
-                                        <fragment content="Eiko Oyama">
-                                            <attributes>
-                                                <color key="NSColor" red="0.29411766" green="0.44705883000000002" blue="0.47450980999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="16" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment>
-                                            <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                            <attributes>
-                                                <color key="NSColor" red="0.29411766" green="0.44705883000000002" blue="0.47450980999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="Japanese Translation Service">
-                                            <attributes>
-                                                <color key="NSColor" red="0.29411766" green="0.44705883000000002" blue="0.47450980999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="13" name="Optima-Italic"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="254" height="49"/>
-                                    <size key="maxSize" width="508" height="10000000"/>
-                                </textView>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="500">
-                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="499">
-                            <rect key="frame" x="-100" y="-100" width="15" height="65"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
@@ -327,7 +262,7 @@ Cg
                                                 <binding destination="253" name="value" keyPath="arrangedObjects.unitPrice" id="260"/>
                                             </connections>
                                         </tableColumn>
-                                        <tableColumn editable="NO" width="72.5615234375" minWidth="56.5615234375" maxWidth="1000" id="239">
+                                        <tableColumn editable="NO" width="73.0615234375" minWidth="56.5615234375" maxWidth="1000" id="239">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Line Total">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -401,51 +336,6 @@ Cg
                             <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000001000000002" alpha="1" colorSpace="calibratedRGB"/>
                         </textFieldCell>
                     </textField>
-                    <scrollView borderType="none" horizontalLineScroll="0.0" horizontalPageScroll="0.0" verticalLineScroll="0.0" verticalPageScroll="0.0" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" id="248">
-                        <rect key="frame" x="177" y="56" width="281" height="91"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <clipView key="contentView" id="DWi-0r-0gn">
-                            <rect key="frame" x="0.0" y="0.0" width="281" height="91"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <textView importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" smartInsertDelete="YES" id="249">
-                                    <rect key="frame" x="0.0" y="0.0" width="281" height="91"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="textColor" red="0.29411766" green="0.44705883000000002" blue="0.47450980999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="281" height="91"/>
-                                    <size key="maxSize" width="562" height="10000000"/>
-                                    <attributedString key="textStorage">
-                                        <fragment>
-                                            <string key="content">
-
-                   Make all checks payable to:  
-                               Eiko Oyama
-          842 Kearney St. El Cerrito, CA 94530
-       510.847.7253 - eiko.oyama@gmail.com</string>
-                                            <attributes>
-                                                <color key="NSColor" red="0.29411766" green="0.44705883000000002" blue="0.47450980999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="281" height="91"/>
-                                    <size key="maxSize" width="562" height="10000000"/>
-                                </textView>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="504">
-                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="503">
-                            <rect key="frame" x="-100" y="-100" width="15" height="58"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                    </scrollView>
                     <textField verticalHuggingPriority="750" id="250">
                         <rect key="frame" x="209" y="30" width="205" height="18"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -841,6 +731,46 @@ Cg
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <font key="titleFont" metaFont="system"/>
                     </box>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Dop-9o-bqA">
+                        <rect key="frame" x="45" y="663" width="96" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Eiko Oyama" id="dZt-xc-M8J">
+                            <font key="font" size="16" name="Optima-Regular"/>
+                            <color key="textColor" red="0.29411766" green="0.44705883000000002" blue="0.47450980999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="drU-Op-ghE">
+                        <rect key="frame" x="45" y="653" width="181" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Japanese Translation Service" id="lw8-R6-chT">
+                            <font key="font" size="13" name="Optima-Italic"/>
+                            <color key="textColor" red="0.29411766" green="0.44705883000000002" blue="0.47450980999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="gqr-SV-lgr">
+                        <rect key="frame" x="389" y="679" width="168" height="58"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Invoice" id="sH8-nE-fVK">
+                            <font key="font" size="48" name="Optima-Italic"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" id="6P9-m9-WL9">
+                        <rect key="frame" x="175" y="42" width="285" height="91"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="wGm-X7-mCx">
+                            <font key="font" size="12" name="Optima-Regular"/>
+                            <string key="title">Make all checks payable to:
+Eiko Oyama
+842 Kearney St. El Cerrito, CA 94530
+510.847.7253 - eiko.oyama@gmail.com</string>
+                            <color key="textColor" red="0.29411766" green="0.44705883000000002" blue="0.47450980999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
         </window>
