@@ -10,6 +10,9 @@
 
 @interface JBD_InvoiceWindowController ()
 @property (nonatomic,strong) IBOutlet NSButton *exportButton;
+@property (nonatomic, strong) IBOutlet NSTextField *headerUserName;
+@property (nonatomic, strong) IBOutlet NSTextField *headerCompanyName;
+@property (nonatomic, strong) IBOutlet NSTextField *footer;
 @end
 
 @implementation JBD_InvoiceWindowController
@@ -23,6 +26,24 @@
 	}
 		
 	return self;
+}
+
+-(void) windowDidLoad {
+    [super windowDidLoad];
+    
+    NSDictionary *userInfo = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"userPersonalInfo" ofType:@"plist"]];
+    
+    [_headerUserName setStringValue:userInfo[@"name"]];
+    [_headerCompanyName setStringValue:userInfo[@"companyName"]];
+    
+    NSString *footer = [NSString stringWithFormat:@"Make all checks payable to:\n%@\n%@\n%@ - %@",
+                        userInfo[@"name"],
+                        userInfo[@"address"],
+                        userInfo[@"phoneNumber"],
+                        userInfo[@"email"]];
+    
+    [_footer setStringValue:footer];
+    
 }
 
 -(IBAction) doExport: (id)sender {

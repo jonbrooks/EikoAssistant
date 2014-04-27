@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>companyName</key>
+	<string>My Company</string>
+	<key>name</key>
+	<string>John Doe</string>
+	<key>address</key>
+	<string>123 Some St. Oakland, CA 94610</string>
+	<key>phoneNumber</key>
+	<string>123.456.7890</string>
+	<key>email</key>
+	<string>john.doe@abc.com</string>
+</dict>
+</plist>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A6A841F0F49EC57009A2172 /* JBD_Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A841E0F49EC57009A2172 /* JBD_Project.m */; };
 		1A7BF7100F4D0049006ECD0E /* JBD_HoursLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BF70F0F4D0049006ECD0E /* JBD_HoursLog.m */; };
+		1AB58780190D784700254964 /* userPersonalInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AB5877F190D784700254964 /* userPersonalInfo.plist */; };
 		1AF9C8C10F77275E00E41B3A /* background.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1AF9C8C00F77275D00E41B3A /* background.tiff */; };
 		770B37ED0679A11B001EADE2 /* JB_Database_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* JB_Database_DataModel.xcdatamodel */; };
 		77C8280E06725ACE000B614F /* JB_Database_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* JB_Database_AppDelegate.m */; };
@@ -32,6 +33,7 @@
 		1A6A841E0F49EC57009A2172 /* JBD_Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBD_Project.m; sourceTree = "<group>"; };
 		1A7BF70E0F4D0049006ECD0E /* JBD_HoursLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBD_HoursLog.h; sourceTree = "<group>"; };
 		1A7BF70F0F4D0049006ECD0E /* JBD_HoursLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBD_HoursLog.m; sourceTree = "<group>"; };
+		1AB5877F190D784700254964 /* userPersonalInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userPersonalInfo.plist; sourceTree = "<group>"; };
 		1AF9C8590F76C36100E41B3A /* Eiko Assistant-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Eiko Assistant-Info.plist"; sourceTree = "<group>"; };
 		1AF9C8C00F77275D00E41B3A /* background.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = background.tiff; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				1AF9C8590F76C36100E41B3A /* Eiko Assistant-Info.plist */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1AB5877F190D784700254964 /* userPersonalInfo.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				B0BDDE3F0F85EE11001EBC13 /* EikoAssistant.icns in Resources */,
 				B06325D91117F32100E9F3E1 /* MainMenu.xib in Resources */,
 				B06325DB1117F32C00E9F3E1 /* invoice.xib in Resources */,
+				1AB58780190D784700254964 /* userPersonalInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
